@@ -5,3 +5,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.header-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
