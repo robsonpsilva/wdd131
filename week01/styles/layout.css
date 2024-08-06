@@ -65,6 +65,8 @@
 .sidebar_r{
     float: right;
     width: 20%;
+    height: 300px;
     padding-top: 20px;
     padding-left: 10px;
+    background-color: cadetblue;
 }
