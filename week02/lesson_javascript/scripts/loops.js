@@ -22,18 +22,17 @@ myInfo = {
 // myInfo.favoriteFoods.forEach(myFunction)
 
 const foodsElement = document.querySelector('#favorite-foods');
-  function mapFoodItem(food) {
-    let favoriteFood = document.createElement('li');
-    favoriteFood.textContent = food;
-    return favoriteFood;
-  }
 
-  const foodListElements = myInfo.favoriteFoods.map(mapFoodItem);
-  // we need to flatten the array of strings into one big string. .join does this.
-  foodsElement.innerHTML = foodListElements.join('');
+const foodListElements = myInfo.favoriteFoods.map(mapFoodItemSmall);
+// we need to flatten the array of strings into one big string. .join does this.
+foodsElement.innerHTML = foodListElements.join('');
 
 function myFunction(value){
   let favoriteFood = document.createElement('li');
   favoriteFood.textContent = value;
   document.querySelector("#favorite-foods").appendChild(favoriteFood);
+}
+
+function mapFoodItemSmall(food) {
+  return `<li>${food}</li>`;
 }
