@@ -23,7 +23,7 @@ myInfo = {
 
 const foodsElement = document.querySelector('#favorite-foods');
 
-const foodListElements = myInfo.favoriteFoods.map(mapFoodItemSmall);
+const foodListElements = myInfo.favoriteFoods.map((food) => `<li>${food}</li>`);
 // we need to flatten the array of strings into one big string. .join does this.
 foodsElement.innerHTML = foodListElements.join('');
 
@@ -31,8 +31,4 @@ function myFunction(value){
   let favoriteFood = document.createElement('li');
   favoriteFood.textContent = value;
   document.querySelector("#favorite-foods").appendChild(favoriteFood);
-}
-
-function mapFoodItemSmall(food) {
-  return `<li>${food}</li>`;
 }
