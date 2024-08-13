@@ -17,7 +17,6 @@ function apend_user_choice(){
         bookLi.appendChild(deleteButton);
         list1.append(bookLi);
         in1.value = '';
-        console.log(deleteButton.ariaLabel);
     }
     else{
         alert('You need to inform a scripture book and chapter!')
