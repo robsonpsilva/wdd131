@@ -2,8 +2,9 @@
 const in1 = document.querySelector('#favchap');  // defining an input variable
 const addbtn = document.querySelector('button'); // defining a button variable
 const list1 = document.querySelector('#list'); //defining a list variable
+const btnSubmit = document.getElementById('btnSubmit');
 
-function apend_user_choice(){
+function appendUserChoice(){
     
     const text= document.createTextNode(in1.value); //Getting input entry
     
@@ -20,7 +21,10 @@ function apend_user_choice(){
     }
     else{
         alert('You need to inform a scripture book and chapter!')
+        in1.focus();
     }
     
 }
+
+btnSubmit.addEventListener('click', appendUserChoice);
 
