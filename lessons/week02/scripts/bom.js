@@ -1,6 +1,6 @@
 
 const in1 = document.querySelector('#favchap');  // defining an input variable
-const addbtn = document.querySelector('button'); // defining a button variable
+const delbtn = document.querySelector('button'); // defining a button variable
 const list1 = document.querySelector('#list'); //defining a list variable
 const btnSubmit = document.getElementById('btnSubmit');
 
@@ -25,6 +25,10 @@ function appendUserChoice(){
     }
     
 }
+function deleteUserChoice(){
+    
+}
 
 btnSubmit.addEventListener('click', appendUserChoice);
+delbtn.addEventListener('click', deleteUserChoice);
 
