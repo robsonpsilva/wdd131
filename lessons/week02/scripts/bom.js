@@ -26,7 +26,8 @@ function appendUserChoice(){
     
 }
 function deleteUserChoice(){
-    
+    list1.removeChild(li);
+    in1.focus();
 }
 
 btnSubmit.addEventListener('click', appendUserChoice);
