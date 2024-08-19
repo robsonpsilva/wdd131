@@ -16,6 +16,7 @@ function appendUserChoice(){
         deleteButton.textContent= 'X';
         bookLi.appendChild(text);
         bookLi.appendChild(deleteButton);
+        bookLi.id = list1.length;
         list1.append(bookLi);
         in1.value = '';
     }
@@ -25,11 +26,14 @@ function appendUserChoice(){
     }
     
 }
-function deleteUserChoice(){
-    list1.removeChild(li);
+function deleteUserChoice(event){
+    list1.removeChild(event.target.parentElement);
     in1.focus();
 }
 
 btnSubmit.addEventListener('click', appendUserChoice);
-delbtn.addEventListener('click', deleteUserChoice);
+list1.addEventListener('click', function(event) {
+    // Verifica se o elemento clicado é um <li>
+    deleteUserChoice(event);
+});
 
