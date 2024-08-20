@@ -14,6 +14,7 @@ function appendUserChoice(){
         const deleteButton = document.createElement('button');
         deleteButton.ariaLabel = 'Delete scripture line'
         deleteButton.textContent= 'X';
+        deleteButton.style.color = 'red';
         bookLi.appendChild(text);
         bookLi.appendChild(deleteButton);
         bookLi.id = list1.length;
@@ -34,6 +35,8 @@ function deleteUserChoice(event){
 btnSubmit.addEventListener('click', appendUserChoice);
 list1.addEventListener('click', function(event) {
     // Verifica se o elemento clicado é um <li>
-    deleteUserChoice(event);
+    if (confirm('Do you confirm that you want to delete this scripture from the list?')){
+        deleteUserChoice(event);
+    }
 });
 
