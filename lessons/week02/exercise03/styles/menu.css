@@ -47,8 +47,9 @@ nav {
 	display: block;
 	margin-bottom: 1em;
 }
-.pe-before::first-line{
-	font-weight:bolder;
+
+.test::first-line{
+	font-weight:900;
 	color: red;
 }
 
