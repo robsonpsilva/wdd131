@@ -42,17 +42,6 @@ nav {
 	content: "❎";
 }
 
-.pe-before::before {
-	content: "Content injected by the ::before pseudo-element.";
-	display: block;
-	margin-bottom: 1em;
-}
-
-.test::first-line{
-	font-weight:900;
-	color: red;
-}
-
 .navigation {
 	display: flex;
 	flex-direction: column;
@@ -84,29 +73,13 @@ nav {
 }
 
 .stuff {
-	margin: .5m;
-	border: 1px solid rgba(0,0,0,.1);
+	margin: .5em;
+	border: 5px solid rgba(0,0,0,.1);
 	background-color: #bed;
 	max-width: 580px;
-	height: 100vh;
+	height: 30vh;
 	
 }
-
-.container {
-	padding: 2em;
-	max-width: 600px;
-	border: 1px solid red;
-  }
-  
-  p {
-	margin: 1em 0;
-  }
-  
-  p::first-letter {
-	font-weight: 700;
-  }
-
-
 /* large view navigation ************************************/
 @media (min-width: 37.5em) {
 	h1 {

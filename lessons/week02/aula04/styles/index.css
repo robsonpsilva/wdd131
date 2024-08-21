@@ -1,0 +1,34 @@
+
+.container {
+	padding: 2em;
+	max-width: 600px;
+	border: 1px solid red;
+  }
+.pe-before::before {
+	content: "Content injected by the ::before pseudo-element.";
+	display: block;
+	margin-bottom: 1em;
+}
+
+.test::first-line{
+	font-weight:900;
+	color: red;
+}
+  
+  p {
+	margin: 1em 0;
+  }
+  
+  p::first-letter {
+	font-weight: 700;
+  }
+ul{
+	padding-left: 2em;
+	padding-top: 2em;
+}
+
+ul li::marker {
+	content: "❤ ";
+	color:blue;
+}
+
