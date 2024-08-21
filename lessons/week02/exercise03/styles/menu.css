@@ -42,6 +42,12 @@ nav {
 	content: "❎";
 }
 
+.pe-before::before {
+	content: "Content injected by the ::before pseudo-element.";
+	display: block;
+	margin-bottom: 1em;
+}
+
 .navigation {
 	display: flex;
 	flex-direction: column;
