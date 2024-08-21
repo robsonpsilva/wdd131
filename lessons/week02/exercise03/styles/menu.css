@@ -47,6 +47,10 @@ nav {
 	display: block;
 	margin-bottom: 1em;
 }
+.pe-before::first-line{
+	font-weight:bolder;
+	color: red;
+}
 
 .navigation {
 	display: flex;
@@ -86,6 +90,21 @@ nav {
 	height: 100vh;
 	
 }
+
+.container {
+	padding: 2em;
+	max-width: 600px;
+	border: 1px solid red;
+  }
+  
+  p {
+	margin: 1em 0;
+  }
+  
+  p::first-letter {
+	font-weight: 700;
+  }
+
 
 /* large view navigation ************************************/
 @media (min-width: 37.5em) {
