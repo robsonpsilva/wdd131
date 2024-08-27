@@ -1,0 +1,35 @@
+
+
+
+#container_footer_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    height: 1.5rem;
+    background-color: cadetblue;
+}
+.temples_container{
+    display: flex;
+}
+.img_container{
+    padding: 3px;
+    width: 200px; /* Defina a largura desejada */
+    height: 200px; /* Defina a altura desejada */
+}
+.img_tunning{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+}
+.img_footer{
+    width: 15px;
+    height: 15px;
+}
+
+main{
+    width: 50vh;
+}
+figcaption{
+    text-align: center;
+}
