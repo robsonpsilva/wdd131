@@ -10,7 +10,7 @@ body{
 h1 {
 	text-align: left;
 	font-size: 1.5rem;
-	margin-left: 1rem;
+	padding-left: 5px;
 }
 
 h2 {
@@ -21,6 +21,13 @@ h2 {
 
 .navigation{
     display:none;
+}
+
+.menu_mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(66, 5, 99);
 }
 
 
@@ -35,20 +42,27 @@ h2 {
 
 }
 
-#menu::after {
+#menu::before {
+    color: wheat;
 	content: "☰";
 }
 
-#menu.open::after {
+#menu.open::before {
 	content: "❎";
 }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
-	display: block;
+	display:flex;
+    align-items: center;
+    justify-content: center;
+    color:wheat;
+    text-decoration: none;
+    height: 60px;
 }
 .open {
     display: block;
+    background-color:rgb(66, 5, 99);
 }
 
 /* End of header section */
