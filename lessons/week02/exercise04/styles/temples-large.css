@@ -18,16 +18,12 @@ h1{
 	color: wheat;
 }
 
-
-
-
 /* Temple images section */
 .temples_container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-bottom: 20px;
-    border: 1px dashed blue;
 
 }
 .img_container{
@@ -90,7 +86,7 @@ figcaption{
 		align-items: center;
 	}
 	.div_main{
-		width: 1280px;
+		max-width: 90vw;
 	}
 
 	#menu {

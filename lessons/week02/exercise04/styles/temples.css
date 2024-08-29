@@ -20,6 +20,11 @@ h2 {
 }
 
 
+
+
+/* Header section */
+/* small view navigation */
+
 .navigation{
     display:none;
 }
@@ -30,10 +35,6 @@ h2 {
     align-items: center;
     background-color:rgb(66, 5, 99);
 }
-
-
-/* Header section */
-/* small view navigation */
 #menu {
 	font-size: 1.5rem;
 	border: 0;
