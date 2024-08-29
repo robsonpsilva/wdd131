@@ -3,68 +3,94 @@
 /* Navigation section */
 
 /* General settings */
-.active::before {
-	content: "📍";  /* just a wayfinding symbol for the user */
+h1{
+	color: wheat;
 }
+
+.active{
+	background-color: black;
+}
+.active::before {
+	content: "📍";/* just a wayfinding symbol for the user */
+}
+
 
 /* large view navigation ************************************/
 @media (min-width: 37.5em) {
 	h1 {
-		font-size: 2.5rem;
+		font-size: 2.5em;
 		margin-left: 0;
 	}
 	
 	h2 {
-		font-size: 2rem;
+		font-size: 2em;
 		text-align: center;
 	}
+
+	a{
+		font-size: 1.2rem;
+	}
+	
 
 	#menu {
 		display: none; /* hide hamburger button */
 	}
 
+	.menu_type_1{
+		display: flex;
+		justify-content: space-between;
+		align-items:center;
+		background-color:rgb(2, 91, 255);
+	
+	}
 	.navigation {
 		display: flex;
-		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		height: 60px;
 	}
 
 	.navigation a {
-		display: block;
-		flex: 1 1 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 90px;
+		height: 60px;
+		text-decoration: none;
+		color:wheat;
 	}
 	.navigation a:hover {
 		background-color: #bbb;
 		color: #333;
 		font-weight: 700;
 	}
-
+	
 }
 
 
-
 /* End of navigation section */
-
-/* Main/Image section */
-
-
 
 /* Temple images section */
 .temples_container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     border: 1px dashed blue;
 
 }
 .img_container{
     width: 300px; /* Defina a largura desejada */
     height: 300px; /* Defina a altura desejada */
+	padding: 1rem;
 }
 .img_tunning{
     width: 100%;
     height: 100%;
     object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+}
+.img_tunning:hover{
+	box-shadow: 0 0 50px goldenrod;
 }
 figcaption{
     text-align: center;
@@ -79,6 +105,7 @@ figcaption{
 
 #container_footer_1{
     display: flex;
+	padding: 5px;
     justify-content: center;
     align-items: center;
     gap: 3px;
@@ -87,5 +114,3 @@ figcaption{
 }
 
 /* End of footer section */
-
-/* End of Image Section */

@@ -1,8 +1,6 @@
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
-const listaItens = document.querySelectorAll('.navigation a');
-
-
+const listaItems = document.querySelectorAll('.navigation a');
 
 hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
@@ -11,7 +9,7 @@ hamButton.addEventListener('click', () => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    listaItens.forEach(item => {
+    listaItems.forEach(item => {
         item.addEventListener('click', () => {
             tWayFinder(item)
         });
@@ -19,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function tWayFinder(item){
-	listaItens.forEach(elem => {
+	listaItems.forEach(elem => {
 		if (elem.textContent.trim() !== item.textContent.trim()) {
 			elem.classList.remove('active');
 		}
