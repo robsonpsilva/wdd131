@@ -9,15 +9,20 @@ h1{
 
 .active{
 	background-color: black;
+	box-shadow: 0 0 2px crimson;
 }
 .active::before {
 	content: "📍";/* just a wayfinding symbol for the user */
+}
+.f_text{
+	color: wheat;
 }
 
 
 /* large view navigation ************************************/
 @media (min-width: 37.5em) {
 	h1 {
+		padding-left: 10px;
 		font-size: 2.5em;
 		margin-left: 0;
 	}
@@ -40,7 +45,7 @@ h1{
 		display: flex;
 		justify-content: space-between;
 		align-items:center;
-		background-color:rgb(2, 91, 255);
+		background-color:rgb(66, 5, 99);
 	
 	}
 	.navigation {
@@ -60,7 +65,7 @@ h1{
 		color:wheat;
 	}
 	.navigation a:hover {
-		background-color: #bbb;
+		background-color: #d8d0f4;
 		color: #333;
 		font-weight: 700;
 	}
@@ -90,7 +95,7 @@ h1{
     object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
 }
 .img_tunning:hover{
-	box-shadow: 0 0 50px goldenrod;
+	box-shadow: 0 0 50px crimson;
 }
 figcaption{
     text-align: center;
@@ -105,12 +110,12 @@ figcaption{
 
 #container_footer_1{
     display: flex;
-	padding: 5px;
+	padding: 8px;
     justify-content: center;
     align-items: center;
     gap: 3px;
     height: 1.5rem;
-    background-color: cadetblue;
+    background-color: rgb(66, 5, 99);
 }
 
 /* End of footer section */
