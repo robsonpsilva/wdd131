@@ -75,17 +75,14 @@
     padding: 20px;
     height: 60%;
 }
-
 .sidebar_l{
     width: 70%;
-    height: 480px;
     border: 1px solid gray;
     border-radius: 10px;  
 }
 
 .sidebar_r{
     width: 30%;
-    height: 480px;
     border: 1px solid gray;
     border-radius: 10px;  
 }
@@ -103,6 +100,46 @@
     color: wheat;
     height: 2em;
 }
+
+#sect1{
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+
+}
+#sect1_img1{
+    padding-right: 10px;
+    width: 140px;
+}
+#sect1_p{
+    padding-top: 10px;
+}
+#sect2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#sect2 h2{
+    text-align: center;
+    padding-bottom: 2px;
+    width: 50vw;
+    border-bottom: 1px solid grey;
+}
+
+figcaption{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+#sect2_div{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
 /* Ending of main section styling */
 
 /* Styling the footer section */
