@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling body element */
+.b-container{
+    display: flex;
+    flex-direction:column;
+    font-size: 1.2rem;
+}
+
+/*Styling the header section*/
+.h-container{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    background-color:rgb(66, 5, 99);
+}
+
+/* Start of nav styling */
+
+
+/* Formating navigation component */
+
+.header-top-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    height: 80px;
+    color: wheat
+}
+.comp_nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width:auto;
+    height: 40px; 
+    background-color: black;
+    
+}
+.comp_nav_a{
+    display: flex;
+    align-items: center;
+    color: wheat;
+    text-decoration: none;
+    height: 100%;
+}
+
+.comp_nav_a:hover {
+    background-color: #d8d0f4;
+    color: #333;
+    font-weight: 700;
+}
+
+.active{
+	background-color: black;
+	box-shadow: 0 0 2px crimson;
+}
+.active::before {
+	content: "📍";/* just a wayfinding symbol for the user */
+}
+
+/* End of nav styling */
+
+/* End of header styling */
+
+/* Styling the main section */
+.m-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    height: 60%;
+}
+
+.sidebar_l{
+    width: 70%;
+    height: 480px;
+    border: 1px solid gray;
+    border-radius: 10px;  
+}
+
+.sidebar_r{
+    width: 30%;
+    height: 480px;
+    border: 1px solid gray;
+    border-radius: 10px;  
+}
+
+#h1_p3{
+    color: yellow;
+}
+#aboutme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+    background-color: rgb(66, 5, 99);
+    color: wheat;
+    height: 2em;
+}
+/* Ending of main section styling */
+
+/* Styling the footer section */
+.f-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: rgb(66, 5, 99);
+    color: wheat;
+    height: 90px;
+    padding: 20px;
+}
+
+#container_footer_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.img_footer{
+    width: 15px;
+    height: 15px;
+}
+
+
+
+
+
