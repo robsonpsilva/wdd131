@@ -126,6 +126,16 @@
     border-bottom: 1px solid grey;
 }
 
+#sidenav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    padding-left: 20px;
+    height: 100%;
+    border: 1px solid red;
+}
+
 figcaption{
     text-align: center;
 }
