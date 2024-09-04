@@ -4,11 +4,85 @@
     box-sizing: border-box;
 }
 
+figcaption{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+h1 {
+	text-align: left;
+	font-size: 1.2rem;
+	
+}
+
+h2 {
+		font-size: 0.8rem;
+		color: navy;
+		text-align: left;
+}
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: white;
+ 	position: relative;
+	left: 5px;
+    padding-bottom: 5px;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+.comp_nav {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	color: #fff;
+}
+
+.comp_nav_a{
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: wheat;
+}
+
+.comp_nav_a:hover {
+    background-color: #d8d0f4;
+    color: #333;
+    font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.open-sans-font {
+    font-family: "Open Sans", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+  }
+  
+
 /* Styling body element */
 .b-container{
     display: flex;
     flex-direction:column;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 /*Styling the header section*/
@@ -26,35 +100,12 @@
 
 .header-top-div{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 15px;
-    height: 80px;
     color: wheat
 }
-.comp_nav{
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    width:auto;
-    height: 40px; 
-    background-color: black;
-    
-}
-.comp_nav_a{
-    display: flex;
-    align-items: center;
-    color: wheat;
-    text-decoration: none;
-    height: 100%;
-}
-
-.comp_nav_a:hover {
-    background-color: #d8d0f4;
-    color: #333;
-    font-weight: 700;
-}
-
 .active{
 	background-color: black;
 	box-shadow: 0 0 2px crimson;
@@ -68,28 +119,28 @@
 /* End of header styling */
 
 /* Styling the main section */
+
+/* Formating the main container and two sections inside it */
 .m-container{
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 20px;
-    height: 60%;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    gap: 10px;
+    padding: 19px;
 }
-.sidebar_l{
-    width: 70%;
-    border: 1px solid gray;
-    border-radius: 10px;  
+.m-container section:first-of-type{
+    width: 100%;
 }
-
-.sidebar_r{
-    width: 30%;
-    border: 1px solid gray;
-    border-radius: 10px;  
+.m-container section:last-of-type{
+    width: 100%;
 }
 
-#h1_p3{
-    color: yellow;
+.card{
+    border: 1px solid gray;
+    border-radius: 10px;
 }
+
+/* Styling o h2 About Me */
 #aboutme{
     display: flex;
     justify-content: center;
@@ -99,7 +150,10 @@
     background-color: rgb(66, 5, 99);
     color: wheat;
     height: 2em;
+
 }
+
+/* Styling first part of inner content */
 
 #sect1{
     display: flex;
@@ -109,11 +163,11 @@
 }
 #sect1_img1{
     padding-right: 10px;
-    width: 140px;
+    height: 160px;
 }
-#sect1_p{
-    padding-top: 10px;
-}
+
+
+/* Styling second part of inner content */
 #sect2{
     display: flex;
     flex-direction: column;
@@ -126,28 +180,30 @@
     border-bottom: 1px solid grey;
 }
 
+#sidediv{
+    display: flex;
+    height:  60vh;
+
+}
 #sidenav{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:flex-start;
-    padding-left: 20px;
-    height: 100%;
-    border: 1px solid red;
+    padding-left: 40px;
+    font-size: 1.1em;
 }
 
-figcaption{
-    text-align: center;
+#h1_p3{
+    color: yellow;
 }
 
-p{
-    text-align: justify;
-}
 
 #sect2_div{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
-    padding: 20px;
+
 }
 
 /* Ending of main section styling */
@@ -165,17 +221,85 @@ p{
     padding: 20px;
 }
 
-#container_footer_1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3px;
+#modification{
+    color: white;
 }
 
 .img_footer{
     width: 15px;
     height: 15px;
 }
+
+/* large view navigation ************************************/
+@media (min-width: 32em) {
+	h1 {
+		font-size: 2rem;
+		margin-left: 0;
+		text-align: center;
+	}
+	
+	h2 {
+		font-size: 1.5rem;
+		text-align: center;
+	}
+
+    /* Formating navigation component */
+
+    .header-top-div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        color: wheat
+    }
+
+
+/* End of nav styling */
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+    .comp_nav{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+        width:auto;
+        height: 40px; 
+        background-color: black;
+        
+    }
+    .comp_nav_a{
+        display: flex;
+        align-items: center;
+        color: wheat;
+        text-decoration: none;
+        height: 100%;
+    }
+
+
+    .m-container section:first-of-type{
+        width: 68%;
+    }
+    .m-container section:last-of-type{
+        width: 30%;
+    }
+    #sect1_p{
+        padding-top: 10px;
+    }
+    #sect2_div{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 20px;
+        padding: 20px;
+    }
+
+}
+
 
 
 
