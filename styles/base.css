@@ -32,7 +32,6 @@ h2 {
 /* Defining the font to be used on the website */
 .open-sans-font {
     font-family: "Open Sans", system-ui;
-    font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     font-variation-settings: "wdth" 100;
