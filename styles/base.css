@@ -143,7 +143,7 @@ h2 {
     /* Creating space between sections/cards */
     row-gap: 10px;
     /* Fixing main section's width*/
-    width: 95vw;
+    max-width: 95vw;
     /* Setting columns and rows'quantity  */
     grid-template-columns: auto;
     grid-template-rows: auto auto;
