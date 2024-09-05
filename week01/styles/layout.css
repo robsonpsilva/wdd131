@@ -11,8 +11,10 @@
 }
 
 .h-container{
+    color: white;
+    height: 15vh;
     display: flex;
-    flex-direction:column-reverse;
+    flex-direction:column;
     justify-content:space-between;
     background-color:darkslategrey;
 }
