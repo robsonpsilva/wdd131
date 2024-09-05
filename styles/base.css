@@ -162,7 +162,7 @@ h2 {
 }
 
 /* Styling o h2 About Me */
-#aboutme{
+.aboutme{
     display: flex;
     justify-content: center;
     align-items: center;
