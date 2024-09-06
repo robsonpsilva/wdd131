@@ -8,17 +8,20 @@ body{
 }
 
 h1 {
-	text-align: left;
+	color: wheat;
 	font-size: 1.5rem;
-	padding-left: 5px;
+	padding-left: 6px;
 }
 
 h2 {
 		font-size: 1.2rem;
 		text-align: center;
-		margin: 1rem;
-}
+		padding: 10px;
 
+}
+figcaption{
+    text-align: center;
+}
 
 
 

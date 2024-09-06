@@ -1,11 +1,8 @@
 
-
 /* Navigation section */
 
 /* General settings */
-h1{
-	color: wheat;
-}
+
 
 .active{
 	background-color: black;
@@ -32,9 +29,7 @@ h1{
 .img_tunning:hover{
 	box-shadow: 0 0 50px crimson;
 }
-figcaption{
-    text-align: center;
-}
+
 /* End of the temple image section */
 
 /* Footer section */
@@ -59,22 +54,13 @@ figcaption{
 }
 
 .main_1{
-	
 	display: grid;
-
 	column-gap: 20px;
-	grid-template-columns: auto;
-}
-
-#head2{
-	grid-column-start: 1;
-	grid-column-end: 2;
 }
 
 /* End of footer section */
 @media (min-width: 30em){
 	.main_1{
-		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto 1fr 1fr 1fr 1fr;
 	}
@@ -91,14 +77,11 @@ figcaption{
 /* large view navigation and images************************************/
 @media (min-width: 45em) {
 	h1 {
-		padding-left: 10px;
-		font-size: 2.5em;
-		margin-left: 0;
+		font-size: 2.5rem;
 	}
 	
 	h2 {
-		font-size: 2em;
-		text-align: center;
+		font-size: 2rem;
 	}
 
 	a{
