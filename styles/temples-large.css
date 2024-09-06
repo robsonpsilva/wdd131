@@ -50,10 +50,21 @@
 
 .main_1{
 	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	column-gap: 20px;
 }
 
-
+/* End of footer section */
+@media (min-width: 30em){
+	#head2{
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+	.img_container{
+		width: 40vw; /* Defina a largura desejada */
+		height: 40vw; /* Defina a altura desejada */
+	}
+}
 
 /* large view navigation and images************************************/
 @media (min-width: 45em) {
