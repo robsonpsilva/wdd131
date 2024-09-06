@@ -4,7 +4,10 @@
 	box-sizing: border-box;
 }
 body{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Open Sans", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
 }
 
 h1,p{
@@ -24,8 +27,6 @@ h2 {
 figcaption{
     text-align: center;
 }
-
-
 
 /* Header section */
 /* small view navigation */
