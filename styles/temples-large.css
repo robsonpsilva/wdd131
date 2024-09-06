@@ -50,12 +50,15 @@
 
 .main_1{
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	column-gap: 20px;
 }
 
 /* End of footer section */
 @media (min-width: 30em){
+	.main_1{
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto 1fr 1fr 1fr 1fr;
+	}
 	#head2{
 		grid-column-start: 1;
 		grid-column-end: 3;
