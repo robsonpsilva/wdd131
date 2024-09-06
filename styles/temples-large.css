@@ -1,9 +1,6 @@
 
 /* Navigation section */
 
-/* General settings */
-
-
 .active{
 	background-color: black;
 	box-shadow: 0 0 2px crimson;
@@ -11,9 +8,7 @@
 .active::before {
 	content: "📍";/* just a wayfinding symbol for the user */
 }
-.f_text{
-	color: wheat;
-}
+
 
 /* Begin of image section */
 .img_container{
