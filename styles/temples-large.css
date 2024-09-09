@@ -12,8 +12,8 @@
 
 #m_1{
 	display: grid;
-	column-gap: 20px;
-	grid-template-columns: repeat( auto-fit, minmax(325px, 1fr) );
+	column-gap: 30px;
+	grid-template-columns: repeat( auto-fit, minmax(320px, 1fr) );
 }
 .m1_div{
 	display: flex;
@@ -21,12 +21,10 @@
 	justify-content: center;
 }
 
-
-
 /* Begin of image section */
 .img_container{
-	width: 325px;
-	height: 325px;
+	width: 320px;
+	height: 320px;
 	 /* Defina a altura desejada */
 	padding-bottom: 30px;
 }
