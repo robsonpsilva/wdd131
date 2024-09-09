@@ -11,7 +11,7 @@ body{
 }
 main{
     border: solid blue;
-    width: 97vw;
+    width: 90vw;
     margin: 0 auto; /* Centraliza o elemento na tela */
 }
 
