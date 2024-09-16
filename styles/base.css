@@ -72,6 +72,7 @@ h2 {
 }
 
 .comp_nav_a:hover {
+    box-sizing: border-box;
     background-color: #d8d0f4;
     color: #333;
     font-weight: 700;
