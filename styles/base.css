@@ -200,6 +200,11 @@ h2 {
     border-bottom: 1px solid grey;
 }
 
+#sect2_img{
+    width: 242px;
+    height: 144px;
+}
+
 #sidediv{
     display: flex;
     height:  60vh;
