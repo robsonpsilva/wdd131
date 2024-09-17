@@ -23,13 +23,15 @@
     color: white;
 }
 
+.hero{
+    background-color: var(--brazilian-flag-yellow-color);
+    padding-bottom: 15px;
+}
 
 .hero img {
     width: 100%;
     height: auto;
 }
-
-
 
 /* Styling the footer section */
 .f-container{
@@ -37,11 +39,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 20px;
     background-color: var(--brazilian-flag-green-color);
     color: white;
     height: 90px;
-    padding: 20px;
 }
 .f-container p{
     font-size: small;
