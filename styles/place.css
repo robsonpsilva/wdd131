@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --brazilian-flag-green-color: #009739;
+    --brazilian-flag-blue-color: #012169;
+    --brazilian-flag-yellow-color: #FEDD00;
+  }
+
+.head-top{
+    display: flex;
+    background-color: var(--brazilian-flag-green-color);
+    align-items: center;
+    justify-content: center;
+    border-bottom: 20px solid var(--brazilian-flag-blue-color);
+    height: 12vh;
+}
+
+.h1-top{
+    color: white;
+}
+
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* Styling the footer section */
+.f-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--brazilian-flag-green-color);
+    color: white;
+    height: 90px;
+    padding: 20px;
+}
+.f-container p{
+    font-size: small;
+}
+
+#modification{
+    color: white;
+}
+
+.img_footer{
+    width: 15px;
+    height: 15px;
+}
