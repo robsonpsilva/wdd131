@@ -5,14 +5,14 @@
 }
 
 :root {
-    --brazilian-flag-green-color: #009739;
+    --brazilian-flag-green-color: 0, 151, 57;
     --brazilian-flag-blue-color: #012169;
     --brazilian-flag-yellow-color: #FEDD00;
   }
 
 .head-top{
     display: flex;
-    background-color: var(--brazilian-flag-green-color);
+    background-color: rgba(var(--brazilian-flag-green-color), 1) ;
     align-items: center;
     justify-content: center;
     border-bottom: 20px solid var(--brazilian-flag-blue-color);
@@ -26,11 +26,31 @@
 .hero{
     background-color: var(--brazilian-flag-yellow-color);
     padding-bottom: 15px;
+    z-index: -1;
 }
-
 .hero img {
     width: 100%;
     height: auto;
+}
+
+.box1{
+    display: grid;
+    position: absolute;
+    width: 30vh;
+    height: 35vh;
+    top: 16vh;
+    left: 10px;
+    background-color: rgba(var(--brazilian-flag-green-color), 0.7) ;
+}
+
+.box2{
+    display: grid;
+    position: absolute;
+    width: 20vh;
+    height: 22vh;
+    bottom: 16vh;
+    right: 10px;
+    background-color: rgba(var(--brazilian-flag-green-color), 0.7) ;
 }
 
 /* Styling the footer section */
@@ -40,7 +60,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background-color: var(--brazilian-flag-green-color);
+    background-color: rgba(var(--brazilian-flag-green-color), 1) ;
     color: white;
     height: 90px;
 }
