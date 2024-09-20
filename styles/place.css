@@ -30,6 +30,32 @@ body{
     color: white;
 }
 
+
+/* Styling the footer section */
+.f-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(var(--brazilian-flag-green-color), 1) ;
+    color: white;
+    height: 90px;
+}
+.f-container p{
+    font-size: small;
+}
+
+#modification{
+    color: white;
+}
+
+.img_footer{
+    width: 15px;
+    height: 15px;
+}
+
+@media (min-width: 450px){
 .hero{
     position: absolute;
     background-color: var(--brazilian-flag-yellow-color);
@@ -39,7 +65,7 @@ body{
 .hero img {
     width: 100%;
     height: auto;
-    max-height: 740px;
+    
 }
 
 .message-container{
@@ -114,27 +140,5 @@ body{
     align-items: end;
     padding-bottom: 10px;
 }
-
-/* Styling the footer section */
-.f-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    background-color: rgba(var(--brazilian-flag-green-color), 1) ;
-    color: white;
-    height: 90px;
-}
-.f-container p{
-    font-size: small;
-}
-
-#modification{
-    color: white;
-}
-
-.img_footer{
-    width: 15px;
-    height: 15px;
+    
 }
