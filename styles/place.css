@@ -75,7 +75,7 @@ p{
     height: auto;
     
 }
-.inner-container h2 img{
+.inner-container img{
     width: 100px;
     height: auto;
 }
@@ -95,9 +95,14 @@ p{
     display: none;
 }
 
-.inner-container h2{
-    grid-row: 1;
-    text-align: center;
+.h_2::after{
+    display: block;
+    content: url("images/weather-icon.svg");
+    
+}
+.inner-container image{
+    grid-row: 2;
+    justify-content: center;
 }
 .row3{
     display: grid;
@@ -143,7 +148,7 @@ p{
     background-color: rgba(var(--brazilian-flag-green-color) ,0.7);
 }
 
-.inner-container h2 img{
+.inner-container img{
     width: 50px;
     height: auto;
 }
