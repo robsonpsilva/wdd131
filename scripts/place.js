@@ -12,7 +12,7 @@ function adjust() {
     let h = image.clientHeight;
     if (image.clientWidth <= 450)
     {
-        h = 390;
+        h = 430;
     }
     else{
         h = image.clientHeight; // Pegando a altura da imagem em pixels

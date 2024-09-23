@@ -94,8 +94,9 @@ p{
 
 .h_2::after{
     display: block;
-    width: 50px;
+    width: 90px;
     height: auto;
+    /* Using icon in svg format for mobile */
     content: url("/images/weather-icon.svg");
     margin: 0 auto; /* Centraliza a imagem horizontalmente */
     
@@ -194,5 +195,16 @@ p{
     align-items: end;
     padding-bottom: 10px;
 }
+
+.h_2::after{
+    display: block;
+    width: 50px;
+    height: auto;
+    /* Using a emoji in wider view */
+    content: "⛅";
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    
+}
+
     
 }
