@@ -75,10 +75,6 @@ p{
     height: auto;
     
 }
-.inner-container img{
-    width: 100px;
-    height: auto;
-}
 
 .inner-container{
     display: grid;
@@ -95,9 +91,16 @@ p{
     display: none;
 }
 
+.h_2{
+    text-align: center;
+}
+
 .h_2::after{
     display: block;
-    content: url("images/weather-icon.svg");
+    width: 50px;
+    height: auto;
+    content: url("/images/weather-icon.svg");
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
     
 }
 .inner-container image{
