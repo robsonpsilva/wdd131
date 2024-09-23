@@ -9,7 +9,15 @@ let windchill = 0;
 
 // Função para ajustar a altura do outro elemento com base na altura da imagem
 function adjust() {
-    const h = image.clientHeight; // Pegando a altura da imagem em pixels
+    let h = image.clientHeight;
+    if (image.clientWidth <= 450)
+    {
+        h = 1.4*h;
+    }
+    else{
+        h = image.clientHeight; // Pegando a altura da imagem em pixels
+    }
+
     div.style.height = h + 'px'; // Definindo a altura do outro elemento
     if (temperature <= 10 && windvelocity >= 4.8){
         windchill= calculateWindChill(temperature, windvelocity);
