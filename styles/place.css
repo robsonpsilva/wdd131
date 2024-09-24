@@ -91,15 +91,10 @@ p{
 #row2{
     display: none;
 }
-
-.h_2::after{
+#imgweather{
     display: block;
-    width: 90px;
-    height: auto;
-    /* Using icon in svg format for mobile  */
-    content: url("/images/weather-icon.svg");
+    width: 50px;
     margin: 0 auto; /* Centraliza a imagem horizontalmente */
-    
 }
 .inner-container image{
     grid-row: 2;
@@ -204,6 +199,10 @@ p{
     content: "⛅";
     margin: 0 auto; /* Centraliza a imagem horizontalmente */
     
+}
+
+#imgweather{
+    display: none;
 }
 
     
