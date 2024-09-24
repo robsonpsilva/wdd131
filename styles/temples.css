@@ -10,8 +10,9 @@ body{
     font-variation-settings: "wdth" 100;
 }
 main{
-    width: 95vw;
-    margin: 0 auto; /* Centraliza o elemento na tela */
+    
+    width: 95vw; /* Limiting the size of the main element */
+    margin: 0 auto; /* Centering the main element on the screen*/
 }
 
 h1,p{

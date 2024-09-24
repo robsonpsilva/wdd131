@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
     <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
     <title>Temple Album</title>
 </head>
 <body>
@@ -89,19 +90,13 @@
             </div>
         </div>
     </main>
-    <footer>
-        <div>
-            <div class = "container_footer_1">
-                <p>&copy;</p> 
-                <img src="images/salt-lake-temple.png" class="img_footer" alt="icon_temple"> 
-                <p>Robson Paulo da Silva </p>
-                <p>Rio de Janeiro</p>
-                <img src="images/salt-lake-temple.png" class="img_footer" alt="icon_temple"> 
-            </div>
-            <div class = "container_footer_1">
-                <p>Last Modification 07/28/2024 17:52:00</p>
-            </div> 
-        </div>    
+    <footer class="f-container">
+        <p>
+            &copy;<span id="currentyear"></span> 
+            <img src="images/salt-lake-temple-ico.webp" class="img_footer" alt="icon_temple"> Robson Paulo da Silva 
+            <img src="images/salt-lake-temple-ico.webp" class="img_footer" alt="icon_temple"> Rio de Janeiro
+        </p> 
+        <p id="lastModified">Last Modification 07/28/2024 17:52:00</p>
     </footer>
 </body>
 </html>

@@ -52,11 +52,28 @@
     justify-content: center;
     align-items: center;
     gap: 3px;
-    height: 1.5rem;
+    height: 1.8rem;
     background-color: rgb(66, 5, 99);
 }
 
+.container_footer_1 p{
+	font-size: small;
+}
 
+.f-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: rgb(66, 5, 99);
+    color: wheat;
+    height: 90px;
+    padding: 20px;
+}
+.f-container p{
+    font-size: small;
+}
 
 /* End of footer section */
 
