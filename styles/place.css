@@ -44,6 +44,7 @@ p{
     background-color: rgba(var(--brazilian-flag-green-color), 1) ;
     color: white;
     height: 90px;
+    font-weight: bolder;
 }
 .f-container p{
     font-size: small;
