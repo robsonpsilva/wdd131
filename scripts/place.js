@@ -29,7 +29,7 @@ function adjust() {
 }
 
 // Ajustando a altura quando a imagem for carregada
-//window.onload = adjust;
+window.onload = adjust;
 
 // Ajustando a altura quando a janela for redimensionada
 window.onresize = adjust;
