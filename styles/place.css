@@ -164,7 +164,7 @@ p{
     grid-row: 1/2;
     background-color: rgba(var(--brazilin-flag-white-color) ,0.8);
 }
-#row2{
+.row2{
     display: block;
     height: 54px;
     grid-column: 4/5;
