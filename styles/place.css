@@ -22,10 +22,10 @@ p{
 
 .head-top{
     display: flex;
-    background-color: rgba(var(--brazilian-flag-green-color), 1) ;
+    background-color: var(--brazilian-flag-blue-color);
     align-items: center;
     justify-content: center;
-    border-bottom: 20px solid var(--brazilian-flag-blue-color);
+    border-bottom: 20px solid rgba(var(--brazilian-flag-green-color), 1) ;
     height: 12vh;
 }
 
@@ -41,10 +41,9 @@ p{
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background-color: rgba(var(--brazilian-flag-green-color), 1) ;
+    background-color: var(--brazilian-flag-blue-color);
     color: white;
     height: 90px;
-    font-weight: bolder;
 }
 .f-container p{
     font-size: small;
