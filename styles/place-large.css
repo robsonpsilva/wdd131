@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    font-family: "Open Sans", system-ui;
+
+    font-family: Arial, "Open Sans", system-ui;
     font-weight: 500;
     font-style: normal;
     font-variation-settings: "wdth" 100;
