@@ -12,3 +12,8 @@
 .f-container p{
     font-size: small;
 }
+.testimage{
+    display: grid;
+    row-gap: 10px;
+    justify-content: center;
+}
