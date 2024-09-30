@@ -3,7 +3,7 @@ const div = document.getElementById("grid-container");
 
 const chill = document.getElementById("chill");
 
-let temperature = 20;
+let temperature = 26;
 let windvelocity = 20;
 let windchill = 0;
 
