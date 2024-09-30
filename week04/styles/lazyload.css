@@ -1,6 +1,10 @@
 h1{
     text-align:  center;
 }
+main{
+    width: 400px;
+    margin: 0 auto;
+}
 .f-container{
     display: flex;
     flex-direction: column;
