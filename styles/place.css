@@ -92,9 +92,10 @@ p{
     display: none;
 }
 #imgweather{
-    display: block;
+    /* SVG image is only displayed in mobile view */
+    display: block; 
     width: 80px;
-    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    margin: 0 auto; /* Centers the image horizontally */
 }
 .inner-container image{
     grid-row: 2;
@@ -197,8 +198,7 @@ p{
     height: auto;
     /* Using a emoji in wider view */
     content: "⛅";
-    margin: 0 auto; /* Centraliza a imagem horizontalmente */
-    
+    margin: 0 auto; /*Centers the image horizontally */
 }
 
 #imgweather{
