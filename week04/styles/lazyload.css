@@ -1,0 +1,14 @@
+.f-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: blue;
+    color: white;
+    height: 70px;
+    padding: 10px;
+}
+.f-container p{
+    font-size: small;
+}
