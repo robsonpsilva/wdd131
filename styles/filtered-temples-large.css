@@ -26,6 +26,9 @@
 .m1_div p{
 	font-size: small;;
 }
+.m1_div span{
+	color: purple;
+}
 
 /* Begin of image section */
 .img_container{
