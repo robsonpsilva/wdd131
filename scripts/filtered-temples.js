@@ -1,7 +1,6 @@
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 const listaItems = document.querySelectorAll('.navigation a');
-
 const temples = [
 	{
 	  templeName: "Aba Nigeria",
@@ -85,8 +84,15 @@ const temples = [
 	  },
 ];
 
+let element_a = document.getElementsByTagName('a');
 let m1 = document.getElementById('m_1');
 
+for (var i = 0; i < element_a.length; i++) {
+    element_a[i].addEventListener('click', function(event) {
+        // Código a ser executado quando o link é clicado
+        console.log('Link clicado:', event.target.href);
+    });
+}
 
 for (let i = 0; i< temples.length; i++){
 	m1.innerHTML += `
