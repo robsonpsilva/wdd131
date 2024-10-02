@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Robson Paulo da Silva. 
+    This page is an Temple's Picture Album, showing many of that beautiful sacred places.">
+    <meta name="author" content="Robson Paulo da Silva">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <title>Temple Album</title>
+</head>
+<body>
+    <header>
+        <div class="menu_type_1">
+            <div class="menu_mobile">
+                <h1>Temple Album</h1>
+                <button id="menu" aria-label="This button gives access to the menu items on this site"></button>
+            </div>   
+            <nav class="navigation">
+                <a href="#" class="active">Home</a>
+                <a href="#">Old</a>
+                <a href="#">New</a>
+                <a href="#">Large</a>
+                <a href="#">Small</a>
+            </nav>
+        </div>
+    </header> 
+    <main>
+        <h2>Home</h2>
+        <div id="m_1">
+            <div class="m1_div">
+                <figure class="img_container">
+                    <img src="images/atantla_temple.webp" alt="Atlanta Temple" class="img_tunning">
+                    <figcaption>Atlanta Temple</figcaption>
+                </figure>
+            </div>
+            <div class="m1_div">
+                <figure class="img_container">
+                    <img src="images/boise-temple.webp" alt="Boise Temple" class="img_tunning">
+                    <figcaption>Boise Temple</figcaption>
+                </figure>
+            </div>
+            <div class="m1_div">
+                <figure class="img_container" id="fig3">
+                    <img src="images/curitiba_temple.webp" alt="Curitiba Temple" class="img_tunning">
+                    <figcaption>Curitiba Temple</figcaption>
+                </figure>  
+            </div>
+            <div class="m1_div">
+                <figure class="img_container">
+                    <img src="images/Edmonton_Alberta_Temple.webp" alt="Edmont Temple" class="img_tunning">
+                    <figcaption>Alberta Temple</figcaption>
+                </figure>   
+            </div>
+            <div class="m1_div">
+                <figure class="img_container">
+                    <img src="images/medford_temple.webp" alt="Medford Temple" class="img_tunning">
+                    <figcaption>Medford Temple</figcaption>
+                </figure>  
+            </div>
+            <div class="m1_div">
+                <figure class="img_container">
+                    <img src="images/Phenix_temple.webp" alt="Phenix Temple" class="img_tunning">
+                    <figcaption>Phenix Temple</figcaption>
+                </figure>
+            </div>
+            <div class="m1_div">
+                <figure class="img_container">
+                    <img src="images/rexburg_temple.webp" alt="Rexburg Temple" class="img_tunning">
+                    <figcaption>Rexburg Temple</figcaption>
+                </figure> 
+            </div>
+            <div class="m1_div">
+                <figure class="img_container">
+                    <img src="images/salt_lake_temple.webp" alt="Salt Lake" class="img_tunning">
+                    <figcaption>Salt Lake Temple</figcaption>
+                </figure>
+            </div>
+            <div class="m1_div">
+                <figure class="img_container">
+                    <img src="images/twins_falls_idaho.webp" alt="Twins Falls Temple" class="img_tunning">
+                    <figcaption>Twins Falls Temple</figcaption>
+                </figure>
+            </div>
+        </div>
+    </main>
+    <footer class="f-container">
+        <p>
+            &copy;<span id="currentyear"></span> 
+            <img src="images/salt-lake-temple-ico.webp" class="img_footer" alt="icon_temple"> Robson Paulo da Silva 
+            <img src="images/salt-lake-temple-ico.webp" class="img_footer" alt="icon_temple"> Rio de Janeiro
+        </p> 
+        <p id="lastModified">Last Modification 07/28/2024 17:52:00</p>
+    </footer>
+</body>
+</html>

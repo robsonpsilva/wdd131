@@ -1,0 +1,118 @@
+
+/* Navigation section */
+
+.active{
+	background-color: black;
+	box-shadow: 0 0 2px crimson;
+}
+.active::before {
+	content: "📍";/* just a wayfinding symbol for the user */
+}
+
+
+#m_1{
+	display: grid;
+	column-gap: 30px;
+	grid-template-columns: repeat( auto-fit, minmax(320px, 1fr) );
+}
+.m1_div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Begin of image section */
+.img_container{
+	width: 320px;
+	height: 320px;
+	 /* Defina a altura desejada */
+	padding-bottom: 30px;
+}
+.img_tunning{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+}
+.img_tunning:hover{
+	box-shadow: 0 0 50px crimson;
+}
+
+/* End of the temple image section */
+
+/* Footer section */
+.img_footer{
+    width: 15px;
+    height: 15px;
+}
+
+.container_footer_1{
+	width: 100%;
+    display: flex;
+	padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    height: 1.8rem;
+    background-color: rgb(66, 5, 99);
+}
+
+.container_footer_1 p{
+	font-size: small;
+}
+
+.f-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: rgb(66, 5, 99);
+    color: wheat;
+    height: 90px;
+    padding: 20px;
+}
+.f-container p{
+    font-size: small;
+}
+
+/* End of footer section */
+
+
+/* large view navigation and images************************************/
+@media (min-width: 45em) {
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.menu_type_1{
+		display: flex;
+		justify-content: space-between;
+		align-items:center;
+		background-color:rgb(66, 5, 99);
+	
+	}
+	.navigation {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 60px;
+	}
+
+	.navigation a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 90px;
+		height: 60px;
+		text-decoration: none;
+		color:wheat;
+	}
+	.navigation a:hover {
+		background-color: #d8d0f4;
+		color: #333;
+		font-weight: 700;
+	}
+
+}
+

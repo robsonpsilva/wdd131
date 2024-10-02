@@ -1,0 +1,83 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+main{
+    
+    width: 95vw; /* Limiting the size of the main element */
+    margin: 0 auto; /* Centering the main element on the screen*/
+}
+
+h1,p{
+	color: wheat;
+}
+
+h1 {
+	font-size: 1.5rem;
+	padding-left: 6px;
+}
+
+h2 {
+		font-size: 1.2rem;
+		text-align: center;
+		padding: 10px;
+}
+figcaption{
+    text-align: center;
+}
+
+
+/* Header section */
+/* small view navigation */
+
+.navigation{
+    display:none;
+}
+
+.menu_mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(66, 5, 99);
+}
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+ 	position: relative;
+    padding-right: 5px;
+
+}
+
+#menu::before {
+    color: wheat;
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display:flex;
+    align-items: center;
+    justify-content: center;
+    color:wheat;
+    text-decoration: none;
+    height: 60px;
+}
+.open {
+    display: block;
+    background-color:rgb(66, 5, 99);
+}
+
+/* End of header section */
