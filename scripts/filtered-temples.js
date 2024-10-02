@@ -91,7 +91,7 @@ let m1 = document.getElementById('m_1');
 for (let i = 0; i< temples.length; i++){
 	m1.innerHTML += `
 		<div class = "m1_div">
-				<h2>Temple: ${temples[i].templeName}</h2>
+				<h3>Temple: ${temples[i].templeName}</h3>
 				<p><span>Location:</span> ${temples[i].location}</p>
 				<p><span>Dedicated:</span> ${temples[i].dedicated}</p>
 				<p><span>Size:</span> ${temples[i].area} sq ft</p>

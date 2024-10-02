@@ -12,13 +12,19 @@
 
 #m_1{
 	display: grid;
-	column-gap: 30px;
+	column-gap: 20px;
 	grid-template-columns: repeat( auto-fit, minmax(320px, 1fr) );
 }
 .m1_div{
 	display: flex;
+	flex-direction: column ;
 	align-items: center;
-	justify-content: center;
+	background-color:antiquewhite;
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+.m1_div p{
+	font-size: small;;
 }
 
 /* Begin of image section */
@@ -27,7 +33,7 @@
 	height: 320px;
 	 /* Defina a altura desejada */
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 }
 .inner_container{
 	background-color:blue;
