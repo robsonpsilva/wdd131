@@ -86,27 +86,44 @@ const temples = [
 
 let element_a = document.getElementsByTagName('a');
 let m1 = document.getElementById('m_1');
+let sel = 'Home';
 
 for (var i = 0; i < element_a.length; i++) {
     element_a[i].addEventListener('click', function(event) {
-        // Código a ser executado quando o link é clicado
-        console.log('Link clicado:', event.target.textContent);
+		opt = event.textContent;
+        if (opt === 'Old'){
+
+		}
+		if (opt === 'New'){
+
+		}
+		if (opt === 'Large'){
+
+		}
+		if (opt === 'Small'){
+
+		}
     });
 }
 
-for (let i = 0; i< temples.length; i++){
-	m1.innerHTML += `
-		<div class = "m1_div">
-				<h3>Temple: ${temples[i].templeName}</h3>
-				<p><span>Location:</span> ${temples[i].location}</p>
-				<p><span>Dedicated:</span> ${temples[i].dedicated}</p>
-				<p><span>Size:</span> ${temples[i].area} sq ft</p>
-				<figure class="img_container">
-					<img src="${temples[i].imageUrl}" alt ="${temples[i].templeName}" width="400px" height="250px" loading="lazy" class="img_tunning">
-				</figure>
-		</div>
-	`
+templeFilter('Home');
+
+function templeFilter(sel){
+	for (let i = 0; i< temples.length; i++){
+		m1.innerHTML += `
+			<div class = "m1_div">
+					<h3>Temple: ${temples[i].templeName}</h3>
+					<p><span>Location:</span> ${temples[i].location}</p>
+					<p><span>Dedicated:</span> ${temples[i].dedicated}</p>
+					<p><span>Size:</span> ${temples[i].area} sq ft</p>
+					<figure class="img_container">
+						<img src="${temples[i].imageUrl}" alt ="${temples[i].templeName}" width="400px" height="250px" loading="lazy" class="img_tunning">
+					</figure>
+			</div>
+		`
+	}
 }
+
 
 hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
