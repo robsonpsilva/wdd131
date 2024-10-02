@@ -63,7 +63,7 @@ const temples = [
 		templeName: "Brazil Rio de Janeiro",
 		location: "Rio de Janeiro, Brazil",
 		dedicated: "2022, May, 8",
-		area: 38202,
+		area: 29966,
 		imageUrl:
 		"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rio-de-janeiro-brazil/400x250/1-001db7326e638032470a02813c9e47191ef74b0e.jpeg"
 	  },
@@ -71,7 +71,7 @@ const temples = [
 		templeName: "Brazil Recife",
 		location: "Recife, Brazil",
 		dedicated: "2000, December, 15",
-		area: 2400000,
+		area: 37200,
 		imageUrl:
 		"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rio-de-janeiro-brazil/400x250/1-001db7326e638032470a02813c9e47191ef74b0e.jpeg"
 	  },
@@ -79,7 +79,7 @@ const temples = [
 		templeName: "Brazil Fortaleza",
 		location: "Fortaleza, Brazil",
 		dedicated: "2009, June, 2",
-		area: 35473,
+		area: 36000,
 		imageUrl:
 		"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/fortaleza-brazil/400x250/1-Fortaleza-Temple-Photo-2233938.jpg"
 	  },
@@ -90,17 +90,15 @@ let m1 = document.getElementById('m_1');
 
 for (let i = 0; i< temples.length; i++){
 	m1.innerHTML += `
-	<div class="m1_div">
-				<div class = "inner-container">
-					<h2>Temple: ${temples[i].templeName}</h2>
-					<p>Location:${temples[i].location}</p>
-					<p>Location:${temples[i].dedicated}</p>
-					<p>Location:${temples[i].area}</p>
-					<figure class="img_container">
-						<img src="${temples[i].imageUrl}" alt="Phenix Temple" class="img_tunning">
-					</figure>
-				</div>
-    </div>
+		<div class = "m1_div">
+				<h2>Temple: ${temples[i].templeName}</h2>
+				<p><span>Location:</span> ${temples[i].location}</p>
+				<p><span>Dedicated:</span> ${temples[i].dedicated}</p>
+				<p><span>Size:</span> ${temples[i].area} sq ft</p>
+				<figure class="img_container">
+					<img src="${temples[i].imageUrl}" alt="Phenix Temple" class="img_tunning">
+				</figure>
+		</div>
 	`
 }
 
