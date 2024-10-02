@@ -90,7 +90,7 @@ let m1 = document.getElementById('m_1');
 for (var i = 0; i < element_a.length; i++) {
     element_a[i].addEventListener('click', function(event) {
         // Código a ser executado quando o link é clicado
-        console.log('Link clicado:', event.textContent);
+        console.log('Link clicado:', event.target.textContent);
     });
 }
 
