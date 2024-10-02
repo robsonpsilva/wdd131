@@ -90,34 +90,37 @@ let sel = 'Home';
 
 for (var i = 0; i < element_a.length; i++) {
     element_a[i].addEventListener('click', function(event) {
-		opt = event.textContent;
-        if (opt === 'Old'){
-
-		}
-		if (opt === 'New'){
-
-		}
-		if (opt === 'Large'){
-
-		}
-		if (opt === 'Small'){
-
-		}
+		opt = this.textContent;
+        templeFilter(opt, temples);
     });
 }
 
-templeFilter('Home');
+templeFilter('Home', temples);
 
-function templeFilter(sel){
-	for (let i = 0; i< temples.length; i++){
+function templeFilter(sel,templeList){
+	temple_temp = templeList;
+	if (sel === 'Old'){
+		temple_temp = templeList.filter(function(templeOpt){return templeOpt.dedicated.substring(0,3) < '1900'});
+	}
+	if (sel === 'New'){
+		temple_temp = templeList.filter(function(templeOpt){return templeOpt.dedicated.substring(0,3) > '2000'});
+	}
+	if (sel === 'Large'){
+		temple_temp = templeList.filter(function(templeOpt){return templeOpt.area > 90000});
+	}
+	if (sel === 'Small'){
+		temple_temp = templeList.filter(function(templeOpt){return templeOpt.area < 10000});
+	}
+	m1.innerHTML = '';
+	for (let i = 0; i< temple_temp.length; i++){
 		m1.innerHTML += `
 			<div class = "m1_div">
-					<h3>Temple: ${temples[i].templeName}</h3>
-					<p><span>Location:</span> ${temples[i].location}</p>
-					<p><span>Dedicated:</span> ${temples[i].dedicated}</p>
-					<p><span>Size:</span> ${temples[i].area} sq ft</p>
+					<h3>Temple: ${temple_temp[i].templeName}</h3>
+					<p><span>Location:</span> ${temple_temp[i].location}</p>
+					<p><span>Dedicated:</span> ${temple_temp[i].dedicated}</p>
+					<p><span>Size:</span> ${temple_temp[i].area} sq ft</p>
 					<figure class="img_container">
-						<img src="${temples[i].imageUrl}" alt ="${temples[i].templeName}" width="400px" height="250px" loading="lazy" class="img_tunning">
+						<img src="${temple_temp[i].imageUrl}" alt ="${temple_temp[i].templeName}" width="400px" height="250px" loading="lazy" class="img_tunning">
 					</figure>
 			</div>
 		`
@@ -148,8 +151,4 @@ function tWayFinder(item){
 			elem.classList.add('active');
 		}
 	})
-}
-
-function applyFilter(){
-
 }
