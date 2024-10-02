@@ -73,7 +73,7 @@ const temples = [
 		dedicated: "2000, December, 15",
 		area: 37200,
 		imageUrl:
-		"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rio-de-janeiro-brazil/400x250/1-001db7326e638032470a02813c9e47191ef74b0e.jpeg"
+		"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/recife-brazil/400x250/recife-brazil-temple-lds-700211-wallpaper.jpg"
 	  },
 	  {
 		templeName: "Brazil Fortaleza",
