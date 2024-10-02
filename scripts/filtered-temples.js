@@ -132,3 +132,7 @@ function tWayFinder(item){
 		}
 	})
 }
+
+function applyFilter(){
+	
+}
