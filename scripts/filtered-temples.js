@@ -95,7 +95,7 @@ for (let i = 0; i< temples.length; i++){
 				<p><span>Location:</span> ${temples[i].location}</p>
 				<p><span>Dedicated:</span> ${temples[i].dedicated}</p>
 				<p><span>Size:</span> ${temples[i].area} sq ft</p>
-				<figure class="img_container">
+				<figure class="img_container" alt ="${temples[i].templeName}" width="400px" height="250px" loading="lazy">
 					<img src="${temples[i].imageUrl}" alt="Phenix Temple" class="img_tunning">
 				</figure>
 		</div>
