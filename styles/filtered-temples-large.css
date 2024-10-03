@@ -13,7 +13,12 @@
 #m_1{
 	display: grid;
 	column-gap: 20px;
-	grid-template-columns: repeat( auto-fit, minmax(320px, 1fr) );
+	grid-template-columns: repeat( auto-fit, minmax(360px, 1fr) );	
+}
+.m0_div{
+	display: flex;
+	flex-direction: row;
+	justify-content:space-evenly;
 }
 .m1_div{
 	display: flex;
@@ -22,6 +27,7 @@
 	background-color:antiquewhite;
 	padding-top: 20px;
 	margin-bottom: 20px;
+	width: 360px;
 }
 .m1_div p{
 	font-size: small;;

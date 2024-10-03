@@ -1,6 +1,7 @@
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 const listaItems = document.querySelectorAll('.navigation a');
+const h2Item = document.querySelector('h2');
 const temples = [
 	{
 	  templeName: "Aba Nigeria",
@@ -98,6 +99,7 @@ for (var i = 0; i < element_a.length; i++) {
 templeFilter('Home', temples);
 
 function templeFilter(sel,templeList){
+	h2Item.textContent = sel;
 	temple_temp = templeList;
 	if (sel === 'Old'){
 		temple_temp = templeList.filter(function(templeOpt){return templeOpt.dedicated.substring(0,3) < '1900'});
@@ -114,14 +116,16 @@ function templeFilter(sel,templeList){
 	m1.innerHTML = '';
 	for (let i = 0; i< temple_temp.length; i++){
 		m1.innerHTML += `
-			<div class = "m1_div">
-					<h3>Temple: ${temple_temp[i].templeName}</h3>
-					<p><span>Location:</span> ${temple_temp[i].location}</p>
-					<p><span>Dedicated:</span> ${temple_temp[i].dedicated}</p>
-					<p><span>Size:</span> ${temple_temp[i].area} sq ft</p>
-					<figure class="img_container">
-						<img src="${temple_temp[i].imageUrl}" alt ="${temple_temp[i].templeName}" width="400px" height="250px" loading="lazy" class="img_tunning">
-					</figure>
+			<div class = "m0_div">
+				<div class = "m1_div">
+						<h3>Temple: ${temple_temp[i].templeName}</h3>
+						<p><span>Location:</span> ${temple_temp[i].location}</p>
+						<p><span>Dedicated:</span> ${temple_temp[i].dedicated}</p>
+						<p><span>Size:</span> ${temple_temp[i].area} sq ft</p>
+						<figure class="img_container">
+							<img src="${temple_temp[i].imageUrl}" alt ="${temple_temp[i].templeName}" width="400px" height="250px" loading="lazy" class="img_tunning">
+						</figure>
+				</div>
 			</div>
 		`
 	}
