@@ -10,9 +10,8 @@ body{
     font-style: normal;
     font-variation-settings: "wdth" 100;
 }
-main{
-    
-    width: 95vw; /* Limiting the size of the main element */
+main{  
+    width: 85vw; /* Limiting the size of the main element */
     margin: 0 auto; /* Centering the main element on the screen*/
 }
 

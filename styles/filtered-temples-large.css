@@ -24,7 +24,7 @@
 	display: flex;
 	flex-direction: column ;
 	align-items: center;
-	background-color: red;
+	background-color:antiquewhite;
 	padding-top: 20px;
 	margin-bottom: 20px;
 }
@@ -133,7 +133,8 @@
 	}
 	#m_1{
 		display: grid;
-		column-gap: 40px;
+		place-items: center;
+		column-gap: 10px;
 		grid-template-columns: repeat( auto-fit, minmax(410px, 1fr) );	
 	}
 
@@ -143,6 +144,17 @@
 		 /* Defina a altura desejada */
 		padding-top: 10px;
 		padding-bottom: 20px;
+	}
+
+	.m1_div{
+		display: flex;
+		flex-direction: column ;
+		align-items: center;
+		background-color:antiquewhite;
+		width: 430px;
+		padding-top: 20px;
+		margin-bottom: 20px;
+		border: 1px red solid;
 	}
 
 }
