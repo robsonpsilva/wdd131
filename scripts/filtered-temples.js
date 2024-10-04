@@ -89,10 +89,6 @@ let element_a = document.getElementsByTagName('a');
 let m1 = document.getElementById('m_1');
 let sel = 'Home';
 
-// The church image page is sending a lot of cookies, 
-// blocking them, as future browsers tend not to support third-party cookies.
-
-console.log(document.cookie.trim());
 
 for (var i = 0; i < element_a.length; i++) {
     element_a[i].addEventListener('click', function(event) {
