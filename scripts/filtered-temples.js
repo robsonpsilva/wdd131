@@ -92,19 +92,7 @@ let sel = 'Home';
 // The church image page is sending a lot of cookies, 
 // blocking them, as future browsers tend not to support third-party cookies.
 
-Object.defineProperty(document, 'cookie', {
-    set: function(value) {
-        console.log('Tentativa de definir cookie bloqueada:', value);
-    },
-    get: function() {
-        return '';
-    }
-});
-
-document.cookie.split(";").forEach(function(cookie) {
-    var name = cookie.split("=").trim();
-    document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/;';
-});
+console.log(document.cookie.trim());
 
 for (var i = 0; i < element_a.length; i++) {
     element_a[i].addEventListener('click', function(event) {
