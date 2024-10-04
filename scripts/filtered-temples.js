@@ -101,6 +101,11 @@ Object.defineProperty(document, 'cookie', {
     }
 });
 
+document.cookie.split(";").forEach(function(cookie) {
+    var name = cookie.split("=").trim();
+    document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/;';
+});
+
 for (var i = 0; i < element_a.length; i++) {
     element_a[i].addEventListener('click', function(event) {
 		opt = this.textContent;
