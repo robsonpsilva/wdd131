@@ -98,7 +98,7 @@
 
 
 /* large view navigation and images************************************/
-@media (min-width: 45em) {
+@media (min-width: 32em) {
 
 	#menu {
 		display: none; /* hide hamburger button */
