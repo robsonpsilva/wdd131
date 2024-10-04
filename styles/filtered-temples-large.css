@@ -25,7 +25,6 @@
 	flex-direction: column ;
 	align-items: center;
 	background-color:antiquewhite;
-	width: 460px;
 	padding-top: 20px;
 	margin-bottom: 20px;
 }
@@ -38,8 +37,8 @@
 
 /* Begin of image section */
 .img_container{
-	width: 400px;
-	height: 250px;
+	width: 320px;
+	height: 320px;
 	 /* Defina a altura desejada */
 	padding-top: 10px;
 	padding-bottom: 20px;
@@ -134,8 +133,16 @@
 	}
 	#m_1{
 		display: grid;
-		column-gap: 20px;
-		grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) );	
+		column-gap: 40px;
+		grid-template-columns: repeat( auto-fit, minmax(410px, 1fr) );	
+	}
+
+	.img_container{
+		width: 400px;
+		height: 250px;
+		 /* Defina a altura desejada */
+		padding-top: 10px;
+		padding-bottom: 20px;
 	}
 
 }
