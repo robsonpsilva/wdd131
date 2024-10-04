@@ -14,12 +14,9 @@
 	display: grid;
 	column-gap: 20px;
 	grid-template-columns: repeat( auto-fit, minmax(360px, 1fr) );	
+	place-items: center;
 }
-.m0_div{
-	display: flex;
-	flex-direction: row;
-	justify-content:space-evenly;
-}
+
 .m1_div{
 	display: flex;
 	flex-direction: column ;
