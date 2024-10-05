@@ -124,7 +124,7 @@ function templeFilter(sel,templeList){
 				<p><span>Dedicated:</span> ${temple_temp[i].dedicated}</p>
 				<p><span>Size:</span> ${temple_temp[i].area} sq ft</p>
 				<figure class="img_container">
-					<img fetchpriority="high"  src="${temple_temp[i].imageUrl}" alt ="${temple_temp[i].templeName}" width="400px" height="250px"  class="img_tunning">
+					<img src="${temple_temp[i].imageUrl}" alt ="${temple_temp[i].templeName}" width="400px" height="250px" loading="lazy" class="img_tunning">
 				</figure>
 			</div>
 		</div>
