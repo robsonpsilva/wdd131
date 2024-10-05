@@ -117,6 +117,7 @@ function templeFilter(sel,templeList){
 	m1.innerHTML = '';
 	for (let i = 0; i< temple_temp.length; i++){
 		m1.innerHTML += `
+		<div class = "m0_div">	
 			<div class = "m1_div">
 				<h3>Temple: ${temple_temp[i].templeName}</h3>
 				<p><span>Location:</span> ${temple_temp[i].location}</p>
@@ -126,6 +127,7 @@ function templeFilter(sel,templeList){
 					<img src="${temple_temp[i].imageUrl}" alt ="${temple_temp[i].templeName}" width="400px" height="250px" loading="lazy" class="img_tunning">
 				</figure>
 			</div>
+		</div>
 		`
 	}
 }
