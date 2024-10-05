@@ -1,4 +1,8 @@
-
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 body{
     font-family: "Open Sans", system-ui;
     font-weight: 500;
@@ -6,7 +10,7 @@ body{
     font-variation-settings: "wdth" 100;
 }
 main{  
-    width: 85vw; /* Limiting the size of the main element */
+    width: 80vw; /* Limiting the size of the main element */
     margin: 0 auto; /* Centering the main element on the screen*/
 }
 
@@ -49,10 +53,7 @@ p{
 	display: grid;
 	grid-template-columns: auto;	
 }
-.m0_div{
-	display: flex;
-	align-items: center;
-}
+
 .m1_div{
 	display: flex;
 	flex-direction: column ;
