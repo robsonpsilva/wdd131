@@ -166,7 +166,6 @@ p{
 		font-weight: 700;
 	}
 	#m_1{
-		display: grid;
 		place-items: center;
 		column-gap: 10px;
 		grid-template-columns: repeat( auto-fit, minmax(410px, 1fr) );	
