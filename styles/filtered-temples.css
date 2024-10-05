@@ -4,43 +4,6 @@
 	box-sizing: border-box;
 }
 
-body{
-    font-family: "Open Sans", system-ui;
-    font-weight: 500;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-}
-main{  
-    width: 85vw; /* Limiting the size of the main element */
-    margin: 0 auto; /* Centering the main element on the screen*/
-}
-
-h1{
-	color: wheat;
-}
-
-h1 {
-	font-size: 1.8rem;
-	padding-left: 6px;
-}
-
-h2 {
-    font-size: 1.6rem;
-    text-align: center;
-    padding: 10px;
-}
-h3{
-    font-size: 1.1rem;
-}
-figcaption{
-    text-align: center;
-}
-p{
-    text-align: center;
-}
-
-
-
 /* Header section */
 /* small view navigation */
 
