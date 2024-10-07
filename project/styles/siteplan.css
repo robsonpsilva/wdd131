@@ -1,0 +1,13 @@
+:root {
+    --primary-color:rgb(85, 111, 73);
+    --secondary-color:yellowgreen;
+    --complementary-color:red;
+    --background-color:rgb(243, 252, 240);
+
+    --main-font-color: rgb(30, 32, 25); 
+
+}
+
+main{
+    background-color: var(--background-color);
+}
