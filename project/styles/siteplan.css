@@ -2,12 +2,12 @@
     --primary-color:rgb(85, 111, 73);
     --secondary-color:yellowgreen;
     --complementary-color:red;
-    --background-color:rgb(243, 252, 240);
+    --background-color:rgb(232, 248, 227);
 
     --main-font-color: rgb(30, 32, 25); 
 
 }
 
-main{
+body{
     background-color: var(--background-color);
 }
