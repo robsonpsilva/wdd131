@@ -1,21 +1,25 @@
 :root {
+
     --primary-color:rgb(35, 56, 25); /* The primary color will be used for the background in the header and footer, as well as in some elements on the screen that need to be highlighted. */
     --secondary-color:yellowgreen;   /* It will be used for aesthetic purposes in borders, lines, highlights, bands and other possible decorative elements on the screen. */
     --complementary-color:rgb(252, 250, 232);/* It will be used for text in contrast with a primary color. */
     --background-color:rgb(218, 250, 230); /* It will be the website's background color (body). */
     --main-font-color: rgb(30, 32, 25); /* It will be used in all types of text, except when we need contrast with the main(primary) color  */
+    --third-color:aqua; /* In some places I intend to use blue that represent water in nature, which hikers will sometimes encounter. */
 }
 
-body{
+main{
+    margin: 0 auto;
     background-color: var(--background-color);
+    border: 1px solid;
 }
-header{
+header, footer{
     background-color: var(--primary-color);
     
 }
 .topline{
-    width: 100vw;
-    border-bottom:10px solid var(--secondary-color);
+    border-bottom:15px solid var(--secondary-color);
+    
 }
 
 .alegreya-h1 {
@@ -28,7 +32,7 @@ header{
 .alegreya-h2{
     font-family: "Alegreya", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 600;
     font-style: normal;
     color: var(--main-font-color);
 }
