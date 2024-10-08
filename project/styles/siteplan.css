@@ -1,13 +1,41 @@
 :root {
-    --primary-color:rgb(85, 111, 73);
-    --secondary-color:yellowgreen;
-    --complementary-color:red;
-    --background-color:rgb(232, 248, 227);
-
-    --main-font-color: rgb(30, 32, 25); 
-
+    --primary-color:rgb(35, 56, 25); /* The primary color will be used for the background in the header and footer, as well as in some elements on the screen that need to be highlighted. */
+    --secondary-color:yellowgreen;   /* It will be used for aesthetic purposes in borders, lines, highlights, bands and other possible decorative elements on the screen. */
+    --complementary-color:rgb(252, 250, 232);/* It will be used for text in contrast with a primary color. */
+    --background-color:rgb(218, 250, 230); /* It will be the website's background color (body). */
+    --main-font-color: rgb(30, 32, 25); /* It will be used in all types of text, except when we need contrast with the main(primary) color  */
 }
 
 body{
     background-color: var(--background-color);
+}
+header{
+    background-color: var(--primary-color);
+    
+}
+.topline{
+    width: 100vw;
+    border-bottom:10px solid var(--secondary-color);
+}
+
+.alegreya-h1 {
+    font-family: "Alegreya", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--complementary-color);
+}
+.alegreya-h2{
+    font-family: "Alegreya", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--main-font-color);
+}
+
+.alegreya-sans-medium {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--main-font-color);
 }
