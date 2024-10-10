@@ -1,6 +1,6 @@
 :root {
 
-    --primary-color:rgb(35, 56, 25); /* The primary color will be used for the background in the header and footer, as well as in some elements on the screen that need to be highlighted. */
+    --primary-color:#003748; /* The primary color will be used for the background in the header and footer, as well as in some elements on the screen that need to be highlighted. */
     --secondary-color:yellowgreen;   /* It will be used for aesthetic purposes in borders, lines, highlights, bands and other possible decorative elements on the screen. */
     --complementary-color:rgb(252, 250, 232);/* It will be used for text in contrast with a primary color. */
     --background-color:rgb(218, 250, 230); /* It will be the website's background color (body). */
@@ -15,7 +15,9 @@ main{
 }
 header, footer{
     background-color: var(--primary-color);
-    
+}
+h1{
+    padding-top: 15px;
 }
 .topline{
     border-bottom:15px solid var(--secondary-color);
