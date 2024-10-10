@@ -18,13 +18,16 @@ header, footer {
     background-color: var(--primary-color);
 }
 
+header {
+    border-bottom:15px solid var(--secondary-color);
+}
+
+footer {
+    border-top:15px solid var(--secondary-color);
+}
     
 h1{
     padding-top: 15px;
-}
-.topline{
-    border-bottom:15px solid var(--secondary-color);
-    
 }
 
 .alegreya-h1 {
