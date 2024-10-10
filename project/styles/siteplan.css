@@ -24,14 +24,12 @@ header, footer{
 
 .alegreya-h1 {
     font-family: "Alegreya", serif;
-    font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
     color: var(--complementary-color);
 }
 .alegreya-h2{
     font-family: "Alegreya", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
     color: var(--main-font-color);
