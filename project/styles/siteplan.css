@@ -25,19 +25,22 @@ h1{
 }
 
 .alegreya-h1 {
+    /* <!-- The Alegreya font will be used for headings, titles and headers. --> */
     font-family: "Alegreya", serif;
     font-weight: 700;
     font-style: normal;
     color: var(--complementary-color);
 }
 .alegreya-h2{
-    font-family: "Alegreya", sans-serif;
+    /* <!-- The Alegreya font will be used for headings, titles and headers. --> */
+    font-family: "Alegreya", serif;
     font-weight: 600;
     font-style: normal;
     color: var(--main-font-color);
 }
 
 .alegreya-sans-medium {
+    /* The Alegreya font will be used for paraghaps and other texts. */
     font-family: "Alegreya Sans", sans-serif;
     font-weight: 500;
     font-style: normal;
