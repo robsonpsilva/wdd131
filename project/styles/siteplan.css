@@ -12,14 +12,13 @@ main{
     background-color: var(--background-color);
     border: 1px solid;
 }
-header, footer{
+header, footer {
+    display: flex;
+    justify-content: center;
     background-color: var(--primary-color);
 }
 
-footer{
-    height: 30px;
-    border: 1px solid;
-}
+    
 h1{
     padding-top: 15px;
 }
@@ -53,6 +52,7 @@ h1{
 
 .alegreya-sans-small {
     /* The Alegreya font will be used for paraghaps and other texts. */
+   
     font-family: "Alegreya Sans", sans-serif;
     font-weight: 500;
     font-style: normal;
