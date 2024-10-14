@@ -56,3 +56,10 @@ footer {
     padding: .5rem 2%;
     text-align: center;
 }
+
+/* FORM STYLING */
+
+.wf1 fieldset{
+    margin: 2rem 0;
+    border: 1px solid lightgray;
+}
