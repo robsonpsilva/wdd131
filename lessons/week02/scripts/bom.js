@@ -3,6 +3,7 @@ const in1 = document.querySelector('#favchap');  // defining an input variable
 const delbtn = document.querySelector('button'); // defining a button variable
 const list1 = document.querySelector('#list'); //defining a list variable
 const btnSubmit = document.getElementById('btnSubmit');
+let index = 0;
 
 function appendUserChoice(){
     
@@ -16,6 +17,8 @@ function appendUserChoice(){
         deleteButton.textContent= 'X';
         deleteButton.style.color = 'red';
         bookLi.appendChild(text);
+        localStorage.setItem(index, text);
+        index +=1;
         bookLi.appendChild(deleteButton);
         bookLi.id = list1.length;
         list1.append(bookLi);
