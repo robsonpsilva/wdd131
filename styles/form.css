@@ -178,9 +178,7 @@ h2 {
     display: flex;
     align-items: center;
     width: 160px;
-    flex-direction: row-reverse;
-    justify-content:flex-start      
-    margin: 3px auto;
+    flex-direction: row-reverse;    
     position: relative;
   }
   /* hide the inputs */
@@ -234,7 +232,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #e0cece;
+    background-color: #eae9e9;
     margin-bottom: 15px;
 }
 
@@ -259,7 +257,7 @@ h2 {
 .wf1 input[type = "text"]{
     display: block;
     padding: .5rem;
-    color: #555;
+    color: black;
     width: 100%;
     max-width: 400px;
 }
