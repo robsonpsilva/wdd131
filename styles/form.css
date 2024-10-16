@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+/* Ensuring that figure labels are centered */
+figcaption{
+    text-align: center;
+}
+
+/* This is a personal style choice, I chose to justify all text within <p> elements. */
+p{
+    text-align: justify;
+}
+
+/* Defining heading 1 <h1> size to small devices */
+h1 {
+	text-align: center;
+	font-size: 1.2rem;
+	
+}
+
+/* Defining heading 2 <h2> size to small devices */
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: rgb(66, 5, 99);
+    color: wheat;
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+    height: 3rem;
+    max-width: 400px;
+}
+
+/* Defining the font to be used on the website */
+.open-sans-font {
+    font-family: "Open Sans", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+  }
+
+/* Stylin small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: white;
+ 	position: relative;
+	left: 5px;
+    padding-bottom: 5px;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+.comp_nav {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	color: #fff;
+}
+
+.comp_nav_a{
+	display: none;
+    box-sizing: border-box;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: wheat;
+}
+
+.comp_nav_a:hover {
+    
+    background-color: #d8d0f4;
+    color: #333;
+    font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+/* Styling body element */
+.b-container{
+    display: flex;
+    flex-direction:column;
+    font-size: 1rem;
+}
+
+/*Styling the header section*/
+.h-container{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    background-color:rgb(66, 5, 99);
+}
+
+/* Start of nav styling */
+
+
+/* Formating navigation component */
+
+.header-top-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    color: wheat
+}
+.active{
+	background-color: black;
+	box-shadow: 0 0 2px crimson;
+}
+.active::before {
+	content: "📍";/* just a wayfinding symbol for the user */
+}
+
+/* End of nav styling */
+
+/* End of header styling */
+
+/* Styling the main section */
+
+
+/* Ending of main section styling */
+
+/* Styling the footer section */
+.f-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: rgb(66, 5, 99);
+    color: wheat;
+    height: 90px;
+    padding: 20px;
+}
+.f-container p{
+    font-size: small;
+}
+
+#modification{
+    color: white;
+}
+
+.img_footer{
+    width: 15px;
+    height: 15px;
+}
+
+
+
+
+/* use reverse flexbox to take advantage of flex-direction: reverse */
+.star-rating {
+    display: flex;
+    align-items: center;
+    width: 160px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 40px auto;
+    position: relative;
+  }
+  /* hide the inputs */
+  .star-rating input {
+    display: none;
+  }
+  /* set properties of all labels */
+  .star-rating > label {
+    width: 30px;
+    height: 30px;
+    font-family: Arial;
+    font-size: 30px;
+    transition: 0.2s ease;
+    color: orange;
+  }
+  /* give label a hover state */
+  .star-rating label:hover {
+    color: #ff69b4;
+    transition: 0.2s ease;
+  }
+  .star-rating label:active::before {
+    transform:scale(1.1);
+  }
+  
+  /* set shape of unselected label */
+  .star-rating label::before {
+    content: '\2606';
+    position: absolute;
+    top: 0px;
+    line-height: 26px;
+  }
+  /* set full star shape for checked label and those that come after it */
+  .star-rating input:checked ~ label:before {
+    content:'\2605';
+  }
+  
+  @-moz-document url-prefix() {
+    .star-rating input:checked ~ label:before {
+    font-size: 36px;
+    line-height: 21px;
+    }
+  } 
+
+.opt{
+    color: blue;
+}
+.noopt{
+    font-weight: bolder;
+}
+.wf1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eee;
+}
+
+.wf1 input[type = "checkbox"]{
+    margin-right: 6px;
+}
+
+
+
+.wf1 select,
+.wf1 label,
+.wf1 textarea,
+.wf1 input[type = "date"],
+.wf1 input[type = "text"]{
+    display: block;
+    padding: .5rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* large view navigation ************************************/
+
+@media (min-width: 32em) {
+	h1 {
+		font-size: 2rem;
+		margin-left: 0;
+		text-align: center;
+	}
+	
+	h2 {
+		font-size: 1.5rem;
+		text-align: center;
+	}
+
+    /* Formating navigation component */
+    .header-top-div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        color: wheat
+    }
+
+
+/* End of nav styling */
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+    .comp_nav{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+        width:auto;
+        height: 40px; 
+        background-color: black;
+        
+    }
+    .comp_nav_a{
+        display: flex;
+        align-items: center;
+        color: wheat;
+        text-decoration: none;
+        height: 100%;
+    }
+   
+    .f-container p{
+        font-size:medium;
+    }
+}
+
+
+
+
+
+

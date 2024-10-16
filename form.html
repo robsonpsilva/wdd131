@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Robson Paulo da Silva</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Robson Paulo da Silva. 
+    This page contains a subscription form.">
+    <meta name="author" content="Robson Paulo da Silva">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+<body class="open-sans-font">
+    <header class = "h-container">
+        <div class = "header-top-div">
+            <h1>WDD 131 - Dynamic Web Fundamentals - Robson Paulo da Silva</h1> 
+        </div>
+        <div>
+            <button id="menu" aria-label="Menu Button"></button>
+            <nav class="comp_nav">
+                <a href="https://www.linkedin.com/in/robson-silva-52605433/" class="comp_nav_a active">LinkedIn</a>
+                <a href="https://byui.instructure.com/" class="comp_nav_a">I-Learn</a>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" class="comp_nav_a">Scripture</a>
+                <a href="#" class="comp_nav_a">Final Project</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+            <h2>Product Review</h2>
+            <form method="get" action="review.html" class="wf1">
+                <label><span class="noopt">Name*</span> 
+                    <select name="product" id="product-id" required>
+                        <option value="" disabled selected>Select a Product...</option>
+                    </select>    
+                </label>
+                
+                <label><span class="noopt">Overall Rating*</span>
+                    <div class="star-rating">
+                        <input type="radio" name="stars" id="star-a" value="5"required/>
+                        <label for="star-a"></label>
+                
+                        <input type="radio" name="stars" id="star-b" value="4" required/>
+                        <label for="star-b"></label>
+                    
+                        <input type="radio" name="stars" id="star-c" value="3" required/>
+                        <label for="star-c"></label>
+                    
+                        <input type="radio" name="stars" id="star-d" value="2" required/>
+                        <label for="star-d"></label>
+                    
+                        <input type="radio" name="stars" id="star-e" value="1" required/>
+                        <label for="star-e"></label>
+                    </div>
+                </label>
+                <label><span class="noopt">Date of Installation*</span><input type="date" name="completeDate"></label>
+                
+                <label><span class="noopt">Which features did you find useful in the product?(Check all that aply)*</span></label>
+                <label><input type="checkbox" name="durability" value="yes">Durability</label>
+                <label><input type="checkbox" name="easeofuse" value="yes">Ease of Use</label>
+                <label><input type="checkbox" name="performance" value="yes">Performance</label>
+                <label><input type="checkbox" name="design" value="yes"> Design</label>
+                <label>
+                    Writen review <span class = "opt">(Optional)</span>
+                    <textarea name="review" id="review"></textarea>
+                </label>
+
+                <label>Your Name <span class = "opt">(Optional)</span> <input type="text"></label>
+
+            </form>
+    </main>
+    <footer class="f-container">
+        <p>
+            &copy;<span id="currentyear"></span> 
+            <img src="images/salt-lake-temple-ico.webp" class="img_footer" alt="icon_temple"> Robson Paulo da Silva 
+            <img src="images/salt-lake-temple-ico.webp" class="img_footer" alt="icon_temple"> Rio de Janeiro
+        </p> 
+        <p id="lastModified">Last Modification 07/28/2024 17:52:00</p>
+    </footer>
+</body>
+</html>
