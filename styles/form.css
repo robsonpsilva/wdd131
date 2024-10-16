@@ -264,6 +264,19 @@ h2 {
     width: 100%;
     max-width: 400px;
 }
+.wf1 input[type = "date"]:required{
+    border-left: solid 8px red;
+}
+.wf1 input[type = "date"]:required:valid{
+    border-left: solid 8px green;
+}
+
+.wf1 select:required{
+    border-left: solid 8px red;
+}
+.wf1 select:required:valid{
+    border-left: solid 8px green;
+}
 
 /* large view navigation ************************************/
 
