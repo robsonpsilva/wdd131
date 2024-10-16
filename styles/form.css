@@ -42,6 +42,7 @@ h2 {
     margin-bottom: .75rem;
     height: 3rem;
     max-width: 400px;
+    width: 100%;
 }
 
 /* Defining the font to be used on the website */
@@ -178,8 +179,8 @@ h2 {
     align-items: center;
     width: 160px;
     flex-direction: row-reverse;
-    justify-content: space-between;
-    margin: 40px auto;
+    justify-content:flex-start      
+    margin: 3px auto;
     position: relative;
   }
   /* hide the inputs */
@@ -233,14 +234,23 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #eee;
+    background-color: #e0cece;
+    margin-bottom: 15px;
 }
 
 .wf1 input[type = "checkbox"]{
     margin-right: 6px;
 }
 
-
+.wf1 input[ type = "submit"]{
+    display:block;
+    padding: .5rem;
+    width: 95%;
+    max-width: 400px;
+    margin: 1rem;
+    font-weight: bolder;
+    background-color:#eaf0fa
+}
 
 .wf1 select,
 .wf1 label,
