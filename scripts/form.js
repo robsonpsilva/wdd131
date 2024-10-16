@@ -30,6 +30,8 @@ const myselect = document.getElementById("product-id");
 products.forEach(opt =>{
     const option = document.createElement("option");
     option.value = opt.name;
+    option.id = opt.name;
     option.textContent = opt.name;
     myselect.appendChild(option);
 });
+
