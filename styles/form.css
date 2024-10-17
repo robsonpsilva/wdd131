@@ -176,10 +176,11 @@ h2 {
 /* use reverse flexbox to take advantage of flex-direction: reverse */
 .star-rating {
     display: flex;
-    align-items: left;
-    width: 160px;
+    align-items: flex-end;
+    width: 384px;
     flex-direction: row-reverse;    
     position: relative;
+    padding-left: 7%;
   }
   /* hide the inputs */
   .star-rating input {
