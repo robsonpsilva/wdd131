@@ -41,7 +41,7 @@ h2 {
     margin-top: .75rem;
     margin-bottom: .75rem;
     height: 3rem;
-    max-width: 400px;
+    max-width: 340px;
     width: 100%;
 }
 
@@ -177,10 +177,10 @@ h2 {
 .star-rating {
     display: flex;
     align-items: flex-end;
-    width: 384px;
+    width: 340px;
     flex-direction: row-reverse;    
     position: relative;
-    padding-left: 7%;
+    padding-left: 4%;
   }
   /* hide the inputs */
   .star-rating input {
@@ -232,9 +232,11 @@ h2 {
 .wf1 {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: #eae9e9;
     padding-bottom: 10px;
     margin-bottom: 20px;
+    max-width: 340px;
 }
 .radio-rating{
     padding-left: .5rem;
@@ -247,7 +249,7 @@ h2 {
 .wf1 input[ type = "submit"]{
     padding: .5rem;
     width: 96%;
-    max-width: 400px;
+    max-width: 340px;
     font-weight: bolder;
     background-color:#eaf0fa;
     margin: auto;
@@ -263,7 +265,7 @@ h2 {
     padding: .5rem;
     color: black;
     width: 100%;
-    max-width: 400px;
+    max-width: 340px;
 }
 .wf1 input[type = "date"]:required{
     border-left: solid 8px red;

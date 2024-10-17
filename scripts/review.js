@@ -11,3 +11,7 @@ localStorage.setItem("reviewnumber", sum);
 
 nreviews.textContent = `The number of completed reviews is: ${sum}`;
 
+function goBack() {
+    window.history.back();
+}
+

@@ -12,3 +12,7 @@ main {
     padding: 0 2%;
     min-height: 20rem;
 }
+
+.reviewlink{
+    text-decoration: none;
+}
