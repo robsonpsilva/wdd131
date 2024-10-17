@@ -176,7 +176,7 @@ h2 {
 /* use reverse flexbox to take advantage of flex-direction: reverse */
 .star-rating {
     display: flex;
-    align-items: center;
+    align-items: left;
     width: 160px;
     flex-direction: row-reverse;    
     position: relative;
