@@ -1,49 +1,4 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-body{
-    font-family: "Open Sans", system-ui;
-    font-weight: 500;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-}
 
-
-h1{
-	color: var(--complementary-color);
-}
-
-h1 {
-	font-size: 1.8rem;
-	padding-left: 6px;
-}
-
-h2 {
-    font-size: 1.6rem;
-    text-align: center;
-    padding: 10px;
-}
-h3{
-    font-size: 1.1rem;
-}
-figcaption{
-    text-align: center;
-}
-p{
-    text-align: center;
-}
-
-/* Navigation section */
-
-.active{
-	background-color: black;
-	box-shadow: 0 0 2px crimson;
-}
-.active::before {
-	content: "📍";/* just a wayfinding symbol for the user */
-}
 
 
 
@@ -55,6 +10,13 @@ p{
 /* large view navigation and images************************************/
 @media (min-width: 500px) {
 
+	#hero{
+		width: 100%;
+		display: block;
+	}
+	.active{
+		border: 3px solid var(--secondary-color);
+	}
 	#menu {
 		display: none; /* hide hamburger button */
 	}
@@ -63,7 +25,7 @@ p{
 		display: flex;
 		justify-content: space-between;
 		align-items:center;
-		background-color:rgb(66, 5, 99);
+		background-color:var(--primary-color);
 	
 	}
 	.navigation {
@@ -77,13 +39,14 @@ p{
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 90px;
+		width: 140px;
 		height: 60px;
 		text-decoration: none;
-		color:wheat;
+		color:var(--complementary-color);
+		background-color: var(--primary-color);
 	}
 	.navigation a:hover {
-		background-color: #d8d0f4;
+		background-color: var(--complementary-color);
 		color: #333;
 		font-weight: 700;
 	}
@@ -93,5 +56,28 @@ p{
 		width: auto;
 	}
 
-}
+	.container{
+		display: grid;
+		grid-template-columns: 37vw 37vw 26vw;
+	}
+	.container div{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+	}
+	.chunk1{
+		grid-column: 1/2;
+		display: flex;
+		align-items: center;
+	}
+	.chunk2{
+		grid-column: 2/3;
+		display: flex;
+		align-items: center;
 
+	}
+	.message{
+		height: 100%;
+	}
+}

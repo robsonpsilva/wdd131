@@ -5,10 +5,51 @@
     --complementary-color:rgb(252, 250, 232);/* It will be used for text in contrast with a primary color. */
     --background-color:rgb(218, 250, 230); /* It will be the website's background color (body). */
     --main-font-color: rgb(30, 32, 25); /* It will be used in all types of text, except when we need contrast with the main(primary) color  */
+    --menu-not-select-color: white;
 }
 
 main{  
 	background-color: var(--background-color);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+h1{
+	color: var(--complementary-color);
+	font-size: 1.8rem;
+	padding-left: 6px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 10px;
+}
+
+a{
+    font-size: 1.2rem;
+}
+
+#hero{
+    display: none;
+}
+/* Navigation section */
+
+.active{
+	background-color: var(--complementary-color);
+}
+.active::before {
+	content: "📍";/* just a wayfinding symbol for the user */
 }
 
 .alegreya-h1 {
@@ -80,14 +121,14 @@ main{
 	display:flex;
     align-items: center;
     justify-content: center;
-    color:var(--background-color);
+    color:var(--primary-color);
     text-decoration: none;
     height: 60px;
     border: 1px solid;
 }
 .open {
     display: block;
-    background-color:var(--secondary-color);
+    background-color:var(--menu-not-select-color);
 }
 
 /* Footer section */
@@ -132,7 +173,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items:center;
-    padding-bottom: 15px;
+    
 }
 
 .home-main-picture{
