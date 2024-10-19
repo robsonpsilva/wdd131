@@ -7,9 +7,17 @@
     This page introduces the user to the fantastic world of Hiking, asking for entry so that they can discover the best places 
     for this leisure activity, receive tips and find everything they need to practice their passion safely.">
     <meta name="author" content="Robson Paulo da Silva">
+    <!-- Typography section -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- The Alegreya font will be used for headings, titles and headers. -->
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- The Alegreya font will be used for paraghaps and other texts. -->
+    <!-- End od typography section -->
     <link rel="stylesheet" href="styles/mobile.css">
     <link rel="stylesheet" href="styles/large-viewport.css">
-    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/base.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
     <title>WDD 131 - Dynamic Web Fundamentals - Rio de Janeiro Hiking World</title>
 </head>
@@ -22,15 +30,35 @@
             </div>   
             <nav class="navigation">
                 <a href="#" class="active">Home</a>
-                <a href="#">Old</a>
-                <a href="#">New</a>
-                <a href="#">Large</a>
-                <a href="#">Small</a>
+                <a href="#">Places</a>
+                <a href="#">Advices</a>
+                <a href="#">Contact Us</a>
             </nav>
         </div>
     </header> 
     <main>
-        <h2>Home</h2>
+        <div class="container">
+            <h2 class="alegreya-h2">Live life!</h2>
+            <picture>
+                <img class="home-main-picture" src="images/mobile-pedra-bonita-view.webp" alt="At the end of a walk, hiking always brings a stunning reward, a view of beautiful rocks, a spectacle of nature." width="350" height="335">
+            </picture>
+            <h2 class="alegreya-h2">Be Healyhy!</h2>
+            <picture>
+                <img class="home-main-picture" src="images/mobile-healty-hiking.webp" alt="This image shows a person walking in a forest, the contact with nature, the fresh air, the ups and downs making the body more healthy." 
+                width="250">
+            </picture>
+            <h2 class="alegreya-h2">Be Happy!</h2>
+            <picture>
+                <img class="home-main-picture" src="images/happy-hike.webp" alt="This image shows a person walking in a forest, the contact with nature, the fresh air, the ups and downs making the body more healthy." 
+                width="250">
+            </picture>
+            <h2 class="alegreya-h2">Be Strong!</h2>
+            <picture>
+                <img class="home-main-picture" src="images/strong-hike.webp" alt="This image shows a person walking in a forest, the contact with nature, the fresh air, the ups and downs making the body more healthy." 
+                width="250">
+            </picture>
+        </div>
+        
     </main>
     <footer class="f-container">
         <p>

@@ -1,4 +1,47 @@
+:root {
 
+    --primary-color:#003748; /* The primary color will be used for the background in the header and footer, as well as in some elements on the screen that need to be highlighted. */
+    --secondary-color:yellowgreen;   /* It will be used for aesthetic purposes in borders, lines, highlights, bands and other possible decorative elements on the screen. */
+    --complementary-color:rgb(252, 250, 232);/* It will be used for text in contrast with a primary color. */
+    --background-color:rgb(218, 250, 230); /* It will be the website's background color (body). */
+    --main-font-color: rgb(30, 32, 25); /* It will be used in all types of text, except when we need contrast with the main(primary) color  */
+}
+
+main{  
+	background-color: var(--background-color);
+}
+
+.alegreya-h1 {
+    /* <!-- The Alegreya font will be used for headings, titles and headers. --> */
+    font-family: "Alegreya", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--complementary-color);
+}
+.alegreya-h2{
+    /* <!-- The Alegreya font will be used for headings, titles and headers. --> */
+    font-family: "Alegreya", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--main-font-color);
+}
+
+.alegreya-sans-medium {
+    /* The Alegreya font will be used for paraghaps and other texts. */
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--main-font-color);
+}
+
+.alegreya-sans-small {
+    /* The Alegreya font will be used for paraghaps and other texts. */
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: small;
+    color: var(--complementary-color);
+}
 
 /* Header section */
 /* small view navigation */
@@ -11,7 +54,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:rgb(66, 5, 99);
+    background-color:var(--primary-color);
 }
 #menu {
 	font-size: 1.5rem;
@@ -24,7 +67,7 @@
 }
 
 #menu::before {
-    color: wheat;
+    color: var(--complementary-color);
 	content: "☰";
 }
 
@@ -37,13 +80,61 @@
 	display:flex;
     align-items: center;
     justify-content: center;
-    color:wheat;
+    color:var(--complementary-color);
     text-decoration: none;
     height: 60px;
 }
 .open {
     display: block;
-    background-color:rgb(66, 5, 99);
+    background-color:var(--primary-color);
 }
 
+/* Footer section */
+.img_footer{
+    width: 15px;
+    height: 15px;
+}
+.container_footer_1{
+	width: 100%;
+    display: flex;
+	padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    height: 1.8rem;
+    background-color: rgb(66, 5, 99);
+}
+
+.container_footer_1 p{
+	font-size: small;
+}
+
+.f-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--primary-color);
+    color: var(--complementary-color);
+    height: 90px;
+    padding: 20px;
+}
+.f-container p{
+    font-size: small;
+}
 /* End of header section */
+
+
+/* Main section */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.home-main-picture{
+    border-radius: 10px;
+}
+
+/* End of main section */

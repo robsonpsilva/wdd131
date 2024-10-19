@@ -9,7 +9,7 @@ let sel = 'Home';
 
 for (var i = 0; i < element_a.length; i++) {
     element_a[i].addEventListener('click', function(event) {
-		h2Item.textContent = this.textContent;
+		// Mudar página quando clicar no link
     });
 }
 
