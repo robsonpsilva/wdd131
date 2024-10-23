@@ -25,7 +25,7 @@
     <header>
         <picture>
             <source srcset="images/rio-de-janeiro-large-view.webp" media="(min-width: 1000px)">
-            <img id = "hero" src="images/rio-de-janeiro-small-view.webp" alt="Stunning landscape of Sugarloaf Mountain in Rio de Janeiro." width="400" height = "83">
+            <img id = "hero" src="images/rio-de-janeiro-small-view.webp" alt="Stunning landscape of Sugarloaf Mountain in Rio de Janeiro." width="400" height = "83" loading="lazy">
         </picture>
         <div class="menu_type_1">
             <div class="menu_mobile">
@@ -45,20 +45,22 @@
             <div class="chunk1">
                 <h2 id = "livelife-h2" class="alegreya-h2">Live life!</h2>
                 <picture>
-                    <img id = "livelife-img" class="home-main-picture" src="images/mobile-pedra-bonita-view.webp" alt="At the end of a walk, hiking always brings a stunning reward, a view of beautiful rocks, a spectacle of nature." width="350" height="335">
+                    <source srcset="images/large-pedra-bonita-view.webp" media="(min-width: 500px)">
+                    <img id = "livelife-img" class="home-main-picture" src="images/mobile-pedra-bonita-view.webp" alt="At the end of a walk, hiking always brings a stunning reward, a view of beautiful rocks, a spectacle of nature." 
+                    width="350" height="335" loading="lazy">
                 </picture>
                 
             </div>
             <div class="chunk2">
                 <h2 id ="be-healthy-h2" class="alegreya-h2">Be Healthy!</h2>
                 <img id ="be-healthy-img" class="home-main-picture" src="images/mobile-healty-hiking.webp" alt="This image shows a person walking in a forest, the contact with nature, the fresh air, the ups and downs making the body more healthy." 
-                    width="250" height="167">
+                    width="250" height="167" loading="lazy">
                 <h2 id = "be-happy-h2"  class="alegreya-h2">Be Happy!</h2>
                 <img class="home-main-picture" src="images/happy-hike.webp" alt="This image shows a person walking in a forest, the contact with nature, the fresh air, the ups and downs making the body more healthy." 
-                    width="250" height="167">
+                    width="250" height="167" loading="lazy">
                 <h2 class="alegreya-h2">Be Strong!</h2>
                 <img class="home-main-picture" src="images/mobile-strong-hike.webp" alt="This image shows a person walking in a forest, the contact with nature, the fresh air, the ups and downs making the body more healthy." 
-                    width="250" height="141">
+                    width="250" height="141" loading="lazy">
             </div>         
             <div class="message">
                 <h2>An Amazing lifestyle!</h2>
@@ -76,8 +78,8 @@
     <footer class="f-container">
         <p>
             &copy;<span id="currentyear"></span> 
-            <img src="images/salt-lake-temple-ico.webp" class="img_footer" alt="icon_temple"> Robson Paulo da Silva 
-            <img src="images/salt-lake-temple-ico.webp" class="img_footer" alt="icon_temple"> Rio de Janeiro
+            <img src="images/salt-lake-temple-ico.webp" class="img_footer" alt="icon_temple" loading="lazy"> Robson Paulo da Silva 
+            <img src="images/salt-lake-temple-ico.webp" class="img_footer" alt="icon_temple" loading="lazy"> Rio de Janeiro
         </p> 
         <p id="lastModified">Last Modification 07/28/2024 17:52:00</p>
     </footer>

@@ -179,6 +179,8 @@ a{
 
 .home-main-picture{
     border-radius: 10px;
+    width: 80%;
+	height: auto;
 }
 
 .message{
