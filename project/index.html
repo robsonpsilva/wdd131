@@ -23,7 +23,10 @@
 </head>
 <body>
     <header>
-        <img id = "hero" src="images/rio-de-janeiro-large-view.png" alt="Stunning landscape of Sugarloaf Mountain in Rio de Janeiro.">
+        <picture>
+            <source srcset="images/rio-de-janeiro-large-view.webp" media="(min-width: 1000px)">
+            <img id = "hero" src="images/rio-de-janeiro-small-view.webp" alt="Stunning landscape of Sugarloaf Mountain in Rio de Janeiro." width="400" height = "83">
+        </picture>
         <div class="menu_type_1">
             <div class="menu_mobile">
                 <h1>Rio de Janeiro Hiking World</h1>
@@ -40,8 +43,11 @@
     <main>
         <div class="container">
             <div class="chunk1">
-                <h2 id = "livelife-h2" class="alegreya-h2">Live life!</h2> 
-                <img id = "livelife-img" class="home-main-picture" src="images/mobile-pedra-bonita-view.webp" alt="At the end of a walk, hiking always brings a stunning reward, a view of beautiful rocks, a spectacle of nature." width="350" height="335">
+                <h2 id = "livelife-h2" class="alegreya-h2">Live life!</h2>
+                <picture>
+                    <img id = "livelife-img" class="home-main-picture" src="images/mobile-pedra-bonita-view.webp" alt="At the end of a walk, hiking always brings a stunning reward, a view of beautiful rocks, a spectacle of nature." width="350" height="335">
+                </picture>
+                
             </div>
             <div class="chunk2">
                 <h2 id ="be-healthy-h2" class="alegreya-h2">Be Healthy!</h2>
