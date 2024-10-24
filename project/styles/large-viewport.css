@@ -68,19 +68,17 @@
 		
 	}
 	.chunk1{
-		grid-column: 1/2;
-		display: flex;
-		align-items: center;
-		
+		grid-column: 1/2;		
 	}
 	.chunk2{
 		grid-column: 2/3;
-		display: flex;
-		align-items: center;
 		padding-bottom: 20px;
-
 	}
 	.message{
 		height: 100%;
+	}
+	.mainpic2{
+		
+		border: 1px solid red;
 	}
 }
