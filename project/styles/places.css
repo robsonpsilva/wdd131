@@ -1,7 +1,7 @@
 #m_1{
 	display: grid;
 	grid-template-columns: auto;
-    align-items: center;	
+    justify-content: center;	
 }
 .m1_div{
 	display: flex;
@@ -13,6 +13,7 @@
 	margin-bottom: 10px;
     border-radius: 8px;
     height: 460px;
+    
 }
 .m1_div p{
     padding: 10px;
