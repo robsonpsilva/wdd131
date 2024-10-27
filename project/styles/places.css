@@ -37,7 +37,7 @@
     #m_1{
 		place-items: center;
 		column-gap: 10px;
-		grid-template-columns: repeat( auto-fit, minmax(410px, 1fr) );	
+		grid-template-columns: repeat( auto-fit, minmax(600px, 1fr) );	
 	}
 
 	.img_container{
