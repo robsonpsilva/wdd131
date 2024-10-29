@@ -61,7 +61,8 @@
 .wf1 input[type = "date"],
 .wf1 input[type = "text"],
 .wf1 input[type = "email"],
-.wf1 input[type = "tel"]
+.wf1 input[type = "tel"],
+.wf1 input[type = "checkbox"]
 {
     display: block;
     padding: .5rem;
@@ -90,7 +91,11 @@
     border-left: solid 8px green;
 }   
 
-
+.form1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /* large view navigation and images************************************/
 @media (min-width: 500px) {
     #m_1{
