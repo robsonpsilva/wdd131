@@ -59,17 +59,27 @@
 .wf1 label,
 .wf1 textarea,
 .wf1 input[type = "date"],
-.wf1 input[type = "text"]{
+.wf1 input[type = "text"],
+.wf1 input[type = "email"],
+.wf1 input[type = "tel"]
+{
     display: block;
     padding: .5rem;
     color: black;
     width: 100%;
     max-width: 340px;
 }
-.wf1 input[type = "date"]:required{
+.wf1 input[type = "text"]:required{
     border-left: solid 8px red;
 }
-.wf1 input[type = "date"]:required:valid{
+.wf1 input[type = "text"]:required:valid{
+    border-left: solid 8px green;
+}
+
+.wf1 input[type = "email"]:required{
+    border-left: solid 8px red;
+}
+.wf1 input[type = "email"]:required:valid{
     border-left: solid 8px green;
 }
 
