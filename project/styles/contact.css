@@ -109,23 +109,20 @@
     display: flex;
     flex-direction: column;
     grid-row: 1/2;
-    padding-left: 10px;
 }
 
 .nothuman{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 97%;
-    margin:10px;
-    padding: 20px;
+    margin: 10px;
     border: 1px solid gray;
     border-radius: 10px;
+    height: 120px;
+    padding-right: 10px;
 }
 .nothuman label{
-   height: 50px;
-    color: blue;
-
+   font-size:x-large;
 }
 .noopt{
     color: red;
