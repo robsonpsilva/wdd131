@@ -2,7 +2,6 @@
 	display: grid;
 	grid-template-columns: auto;
     justify-content: center;	
-    border: 1px solid red;
 }
 .m1_div{
 	display: flex;
@@ -14,7 +13,7 @@
 	padding-top: 20px;
     padding-bottom: 10px;
 	margin-bottom: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
     height: 370px;
     
 }
@@ -32,14 +31,36 @@
     height: 2rem;
 }
 
+
+.m2_div{
+	display: flex;
+	flex-direction: column ;
+	align-items: center;
+    justify-content: space-around;
+	width: 280px;
+	background-color:var(--complementary-color);
+	padding-top: 20px;
+    padding-bottom: 10px;
+	margin-bottom: 10px;
+    border-radius: 20px;
+    height: 200px;
+    
+}
+.m2_div p{
+    padding: 10px;
+	font-size: small;
+    text-align: justify;
+    color: var(--main-font-color);
+}
+
+
 .wf1 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #eae9e9;
+    background-color: var(--primary-color);
     padding-bottom: 10px;
     margin-bottom: 20px;
-    max-width: 360px;
+    border-radius: 15px;
 }
 
 .wf1 input[type = "checkbox"]{
@@ -48,8 +69,7 @@
 
 .wf1 input[ type = "submit"]{
     padding: .5rem;
-    width: 96%;
-    max-width: 360px;
+    width: 98%;
     font-weight: bolder;
     background-color:#eaf0fa;
     margin: auto;
@@ -66,9 +86,9 @@
 {
     display: block;
     padding: .5rem;
-    color: black;
+    color: var(--complementary-color);
     width: 100%;
-    max-width: 360px;
+
 }
 .wf1 input[type = "text"]:required{
     border-left: solid 8px red;
@@ -97,25 +117,42 @@
 .form1{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    grid-row: 1/2;
+    padding-left: 10px;
 }
 
 .nothuman{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 95%;
-    padding-right: 10px;
-    margin-bottom: 10px;
+    width: 97%;
+    margin:10px;
+    padding: 20px;
     border: 1px solid gray;
+    border-radius: 10px;
+}
+.nothuman label{
+   height: 50px;
+    color: blue;
+
 }
 .noopt{
     color: red;
     font-size: bolder;
 }
 
+#specialh2{
+    text-align: left;
+}
+
+
+
+@media (min-width: 1200px) {
+    
+}
+
 /* large view navigation and images************************************/
-@media (min-width: 500px) {
+@media (min-width: 370px) {
     #m_1{
 		place-items: center;
 		column-gap: 10px;
@@ -127,6 +164,23 @@
 	}
 
 	.m1_div{
-		width: 350px;
+		width: 370px;
 	}
+
+    .secondcontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-template-columns: auto;	
+    }
+
+    #specialh2{
+        text-align: center;
+    }
+
+    .wf1{
+        width: 370px;
+        margin-right: 10px;
+    }
+    
 }
