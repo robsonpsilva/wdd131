@@ -124,6 +124,9 @@
 .nothuman label{
    font-size:x-large;
 }
+.nothuman input{
+    height: 2rem;
+}
 .noopt{
     color: red;
     font-size: bolder;
