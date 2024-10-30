@@ -2,6 +2,7 @@
 	display: grid;
 	grid-template-columns: auto;
     justify-content: center;	
+    border: 1px solid red;
 }
 .m1_div{
 	display: flex;
@@ -82,10 +83,13 @@
 .wf1 input[type = "email"]:required:valid{
     border-left: solid 8px green;
 }
-.wf1 input[type = "checkbox"]:required{
+.wf1 textarea{
+    height: 200px;
+}
+.wf1 textarea:required{
     border-left: solid 8px red;
 }
-.wf1 input[type = "checkbox"]:required:valid{
+.wf1 textarea:required:valid{
     border-left: solid 8px green;
 }
 
