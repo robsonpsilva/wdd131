@@ -71,14 +71,14 @@
          <div class="form1">
             <h2>Send Us a Message</h2>
             <form method="get" action="contactalert.html" class="wf1">
-                <label>Full Name*<span class = "noopt">(Mandatory field)</span> <input type="text" name ="username" id = "username-id" required></label>
-                <label>Email*<span class = "noopt">(Mandatory field)</span> <input type="email" name ="useremail" id = "useremail-id" required></label>
-                <label>Phone number (Optional)<span class = "nopt"></span> <input type="tel" name ="userphone" id = "userephone-id"></label>
+                <label>Full Name*<span class = "noopt"> (Mandatory field)</span> <input type="text" name ="username" id = "username-id" required></label>
+                <label>Email*<span class = "noopt"> (Mandatory field)</span> <input type="email" name ="useremail" id = "useremail-id" required></label>
+                <label>Phone number (Optional)<span class = "noopt"></span> <input type="tel" name ="userphone" id = "userephone-id"></label>
                 <label>
-                    Type your message here*<span class = "nopt">Mandatory field</span>
-                    <textarea name="review" id="review"></textarea>
+                    Type your message here*<span class = "noopt"> (Mandatory field)</span>
+                    <textarea name="usermessage" id="usermessageid" required></textarea>
                 </label>
-                <label><input type="checkbox" name="durability" id = "durability-id" value="yes">I´m not a robot <img src="images/recap-img.jpg" alt=""></label>
+                <div class="nothuman"><label ><input type="checkbox" name="humanuser" id = "humanuser-id" value="yes" required>I´m not a robot</label> <img src="images/recap-img.jpg" alt="Image to test if the user is human"></div>
                 <input type="submit" value="Post Review" name = "submit-button" id = "submit-button-id">
             </form>
 

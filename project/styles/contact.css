@@ -38,7 +38,7 @@
     background-color: #eae9e9;
     padding-bottom: 10px;
     margin-bottom: 20px;
-    max-width: 340px;
+    max-width: 360px;
 }
 
 .wf1 input[type = "checkbox"]{
@@ -48,7 +48,7 @@
 .wf1 input[ type = "submit"]{
     padding: .5rem;
     width: 96%;
-    max-width: 340px;
+    max-width: 360px;
     font-weight: bolder;
     background-color:#eaf0fa;
     margin: auto;
@@ -61,14 +61,13 @@
 .wf1 input[type = "date"],
 .wf1 input[type = "text"],
 .wf1 input[type = "email"],
-.wf1 input[type = "tel"],
-.wf1 input[type = "checkbox"]
+.wf1 input[type = "tel"]
 {
     display: block;
     padding: .5rem;
     color: black;
     width: 100%;
-    max-width: 340px;
+    max-width: 360px;
 }
 .wf1 input[type = "text"]:required{
     border-left: solid 8px red;
@@ -83,19 +82,34 @@
 .wf1 input[type = "email"]:required:valid{
     border-left: solid 8px green;
 }
-
-.wf1 select:required{
+.wf1 input[type = "checkbox"]:required{
     border-left: solid 8px red;
 }
-.wf1 select:required:valid{
+.wf1 input[type = "checkbox"]:required:valid{
     border-left: solid 8px green;
-}   
+}
+
 
 .form1{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+.nothuman{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+}
+.noopt{
+    color: red;
+    font-size: bolder;
+}
+
 /* large view navigation and images************************************/
 @media (min-width: 500px) {
     #m_1{
