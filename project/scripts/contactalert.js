@@ -1,15 +1,18 @@
-const nreviews = document.getElementById("numberofreviews");
-let reviews = localStorage.getItem("reviewnumber");
+const ncontacts = document.getElementById("numberofcontacts");
+let contacts = localStorage.getItem("contactnumber");
 let sum = 0;
-if (reviews!== null){
-    sum = parseInt(reviews) + 1;
+if (contacts == null){
+ contacts = 0;
+}
+if (ncontacts !== null){
+    sum = parseInt(contacts) + 1;
 }
 else{
     sum = 1; 
 }
-localStorage.setItem("reviewnumber", sum);
+localStorage.setItem("contactnumber", sum);
 
-nreviews.textContent = `The number of completed reviews is: ${sum}`;
+ncontacts.textContent = `${sum}`;
 
 function goBack() {
     window.history.back();
