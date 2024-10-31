@@ -41,60 +41,63 @@
         </div>
     </header> 
     <main>
+        
         <h2>Contact Us</h2>
-        <div class="m_1">
-            <div class = "m1_div">
-                <figure>
-                    <img src="images/pedra-bonita-trail-card.jpg" alt ="Image of the landscape at the end of the Pedra Bonita trail." width="300" height="208" class="img_tunning">
-                </figure>
-                <h3>Questions?</h3>
-                <p>Click the button below to visit our FAQ, a list of frequently asked questions, where you can find answers to many of the most common questions!</p>
-                <button type="submit">Visit Faq</button>    
+        <div class="maincontainer"></div>
+            <div class="m_1">
+                <div class = "m1_div">
+                    <figure>
+                        <img src="images/pedra-bonita-trail-card.jpg" alt ="Image of the landscape at the end of the Pedra Bonita trail." width="300" height="208" class="img_tunning">
+                    </figure>
+                    <h3>Questions?</h3>
+                    <p>Click the button below to visit our FAQ, a list of frequently asked questions, where you can find answers to many of the most common questions!</p>
+                    <button type="submit">Visit Faq</button>    
+                </div>
+                <div class = "m1_div">
+                    <figure>
+                        <img src="images/cataratas-iguacu-card.jpg" alt ="Image of the landscape at the end of the Pedra Bonita trail." width="300" height="208" class="img_tunning">
+                    </figure>
+                    <h3>Media Inquiries</h3>
+                    <p>Learn more about us and our walks by visiting our media library, click the button below!</p>
+                    <button type="submit">Visit Media</button>
+                </div>
+                <div class = "m1_div">
+                    <figure>
+                        <img src="images/catacumba-trail-card.jpg" alt ="Image of the landscape at the end of the Catacumba trail." width="300" height="208" class="img_tunning">
+                    </figure>
+                    <h3>Partnership  inqueries</h3>
+                    <p>Meet our partners, find services and products that will make your walking experience even better and safer!</p>
+                    <button type="submit">Meet Our Partners</button>
+                </div>
             </div>
-            <div class = "m1_div">
-                <figure>
-                    <img src="images/cataratas-iguacu-card.jpg" alt ="Image of the landscape at the end of the Pedra Bonita trail." width="300" height="208" class="img_tunning">
-                </figure>
-                <h3>Media Inquiries</h3>
-                <p>Learn more about us and our walks by visiting our media library, click the button below!</p>
-                <button type="submit">Visit Media</button>
-            </div>
-            <div class = "m1_div">
-                <figure>
-                    <img src="images/catacumba-trail-card.jpg" alt ="Image of the landscape at the end of the Catacumba trail." width="300" height="208" class="img_tunning">
-                </figure>
-                <h3>Partnership  inqueries</h3>
-                <p>Meet our partners, find services and products that will make your walking experience even better and safer!</p>
-                <button type="submit">Meet Our Partners</button>
+            <div class="m_1">
+                <div class="form1">  
+                    <h2 id="specialh2">Send Us a Message</h2>
+                    <form method="get" action="contactalert.html" class="wf1">
+                        <label>Full Name*<span class = "noopt"> (Mandatory field)</span> <input type="text" name ="username" id = "username-id" required placeholder="Type your full name here"></label>
+                        <label>Email*<span class = "noopt"> (Mandatory field)</span> <input type="email" name ="useremail" id = "useremail-id" required placeholder="Type your email here"></label>
+                        <label>Phone number (Optional)<span class = "noopt"></span> <input type="tel" name ="userphone" id = "userephone-id" placeholder="Type your phone number here"></label>
+                        <label>
+                            Type your message here*<span class = "noopt"> (Mandatory field)</span>
+                            <textarea name="usermessage" id="usermessageid" required placeholder="Type your message here"></textarea>
+                        </label>
+                        <div class="nothuman"><label><input type="checkbox" name="humanuser" id = "humanuser-id" value="yes" required>I´m not a robot</label> <img src="images/recap-img.jpg" alt="Image to test if the user is human"></div>
+                        <input type="submit" value="Post Review" name = "submit-button" id = "submit-button-id">
+                    </form>
+                </div>
+                <div class = "m1_div">
+                    <h3>Headquarter</h3>
+                    <p>Presidente Vargas avenue, Rio de Janeiro,  RJ</p>
+                    <p>Monday - Friday 8AM-6PM <br> +55 21 3232-3344</p>
+                </div>
+                <div class = "m1_div">
+                    <h3>Shop Customer Service </h3>
+                    <p>Terra Nova Mall <br> Francisco Bicalho avenue, Rio de Janeiro, RJ</p>
+                    <p>Monday - Friday <br>10AM-10PM</p>
+                </div>
             </div>
         </div>
-        <div class="m_1 m_2">
-            <div class="form1">  
-                <h2 id="specialh2">Send Us a Message</h2>
-                <form method="get" action="contactalert.html" class="wf1">
-                    <label>Full Name*<span class = "noopt"> (Mandatory field)</span> <input type="text" name ="username" id = "username-id" required placeholder="Type your full name here"></label>
-                    <label>Email*<span class = "noopt"> (Mandatory field)</span> <input type="email" name ="useremail" id = "useremail-id" required placeholder="Type your email here"></label>
-                    <label>Phone number (Optional)<span class = "noopt"></span> <input type="tel" name ="userphone" id = "userephone-id" placeholder="Type your phone number here"></label>
-                    <label>
-                        Type your message here*<span class = "noopt"> (Mandatory field)</span>
-                        <textarea name="usermessage" id="usermessageid" required placeholder="Type your message here"></textarea>
-                    </label>
-                    <div class="nothuman"><label><input type="checkbox" name="humanuser" id = "humanuser-id" value="yes" required>I´m not a robot</label> <img src="images/recap-img.jpg" alt="Image to test if the user is human"></div>
-                    <input type="submit" value="Post Review" name = "submit-button" id = "submit-button-id">
-                </form>
-            </div>
-            <div class = "m1_div m2_div">
-                <h3>Headquarter</h3>
-                <p>Presidente Vargas avenue, Rio de Janeiro,  RJ</p>
-                <p>Monday - Friday 8AM-6PM <br> +55 21 3232-3344</p>
-            </div>
-            <div class = "m1_div m2_div">
-                <h3>Shop Customer Service </h3>
-                <p>Terra Nova Mall <br> Francisco Bicalho avenue, Rio de Janeiro, RJ</p>
-                <p>Monday - Friday <br>10AM-10PM</p>
-            </div>
-        </div>
-          
+
     </main>
     <footer class="f-container">
         <p>

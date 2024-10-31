@@ -144,17 +144,14 @@
 
 /* large view navigation and images************************************/
 @media (min-width: 450px) {
-    .m_1{
-		place-items: center;
-		column-gap: 10px;
+    .m_1{	
 		grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) );	
 	}
     .m_2{
+        justify-content: space-around;
         place-items: start;
         padding-top: 10px;
-    }
-    .m3{
-        
+        border: 1px red solid;
     }
 
 	.img_container{
@@ -181,5 +178,9 @@
         width: 370px;
         margin-right: 10px;
     }
-   
+    
+    .maincontainer{
+        display: flex;
+        justify-content: center;
+    }
 }
