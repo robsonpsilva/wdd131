@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Review Confirmation - WDD 131 - Dynamic Web Fundamentals - Robson Paulo da Silva</title>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Review Page - WDD 131 - Dynamic Web Fundamentals - Robson Paulo da Silva. 
+    This a review confirmation page contains a success message after the user has completed their product review.">
+    <meta name="author" content="Robson Paulo da Silva">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/review.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/review.js" defer></script>
+
+</head>
+<body>
+    <header class = "h-container">
+        <div class = "header-top-div">
+            <h1>WDD 131 - Dynamic Web Fundamentals - Robson Paulo da Silva</h1> 
+        </div>
+        <div>
+            <button id="menu" aria-label="Menu Button"></button>
+            <nav class="comp_nav">
+                <a href="https://www.linkedin.com/in/robson-silva-52605433/" class="comp_nav_a active">LinkedIn</a>
+                <a href="https://byui.instructure.com/" class="comp_nav_a">I-Learn</a>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" class="comp_nav_a">Scripture</a>
+                <a href="#" class="comp_nav_a">Final Project</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2>Thank you for your contact!</h2>
+        <p>We will contact you shortly.</p>
+        <p id = "numberofreviews"></p>
+        <a href="#" onclick="goBack()" class="reviewlink">Click here to return to the previous page!</a>
+           
+    </main>
+    <footer class="f-container">
+        <p>
+            &copy;<span id="currentyear"></span> 
+            <img src="images/salt-lake-temple-ico.webp" class="img_footer" alt="icon_temple"> Robson Paulo da Silva 
+            <img src="images/salt-lake-temple-ico.webp" class="img_footer" alt="icon_temple"> Rio de Janeiro
+        </p> 
+        <p id="lastModified">Last Modification 07/28/2024 17:52:00</p>
+    </footer>
+    
+</body>
+</html>
