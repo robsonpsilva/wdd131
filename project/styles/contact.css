@@ -122,6 +122,8 @@
     padding-right: 10px;
 }
 .nothuman label{
+    display: flex;
+    justify-content: center;
    font-size:x-large;
 }
 .nothuman input{
@@ -138,23 +140,29 @@
 
 
 
-@media (min-width: 1200px) {
-    
-}
+
 
 /* large view navigation and images************************************/
 @media (min-width: 450px) {
-    #m_1{
+    .m_1{
 		place-items: center;
 		column-gap: 10px;
 		grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) );	
 	}
+    .m_2{
+        place-items: start;
+        padding-top: 10px;
+    }
+    .m3{
+        
+    }
 
 	.img_container{
 		width: auto;
 	}
 
 	.m1_div{
+        justify-content: start;
 		width: 370px;
 	}
 
