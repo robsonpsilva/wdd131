@@ -77,12 +77,16 @@
 {
     display: block;
     padding: .5rem;
-    color: var(--complementary-color);
     width: 100%;
 
 }
+
+.wf1 label{
+    color: var(--complementary-color);
+}
 .wf1 input[type = "text"]:required{
     border-left: solid 8px red;
+    
 }
 .wf1 input[type = "text"]:required:valid{
     border-left: solid 8px green;
